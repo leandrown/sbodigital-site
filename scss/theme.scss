@@ -1,4 +1,4 @@
-// sass --watch scss/creative.scss css/creative.css --style compressed
+// sass --watch scss/theme.scss css/theme.css --style compressed
 // Import custom variables (overrides Bootstrap default variables)
 @import "./variables";
 
@@ -7,4 +7,3 @@
 @import "./navbar";
 @import "./global";
 @import "./form";
-@import "./accessibility/main-bar";
