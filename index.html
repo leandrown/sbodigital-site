@@ -12,6 +12,7 @@
 
    <!-- Accessibility Bar -->
    <link rel="stylesheet" media="screen" href="css/accessibility/main-bar.css">
+   <link rel="stylesheet" media="screen" href="css/accessibility/accessibility.css">
    <link rel="stylesheet" media="screen" href="css/accessibility/grayscale.css" id="grayscale" disabled>
    <link rel="stylesheet" media="screen" href="css/accessibility/increase-contrast.css" id="increase_contrast" disabled>
    <link rel="stylesheet" media="screen" href="css/accessibility/invert-color.css" id="invert_color" disabled>
@@ -103,6 +104,54 @@
          </div>
       </div>
    </nav>
+
+   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-accessibility.min.js"></script>
+   <script>
+      var zoom;
+
+      function setStyle(styleid) {
+         var increase_contrast = document.getElementById('increase_contrast');
+         var yellow_black = document.getElementById('yellow_black');
+         var invert_grayscale = document.getElementById('invert_grayscale');
+         var invert_color = document.getElementById('invert_color');
+         var grayscale = document.getElementById('grayscale');
+
+         increase_contrast.disabled = true;
+         yellow_black.disabled = true;
+         invert_grayscale.disabled = true;
+         invert_color.disabled = true;
+         grayscale.disabled = true;
+
+         if (styleid) {
+            var atual = document.getElementById(styleid);
+            atual.disabled = false;
+         }
+      }
+
+      window.onload = setStyle();
+
+      function zoomInit() {
+         zoom = parseInt(localStorage.getItem('zoom') || 100);
+         document.getElementsByTagName('body')[0].style.zoom = zoom + '%';
+      }
+
+      zoomInit();
+
+      function zoomIn() {
+         zoom += 20;
+         document.getElementsByTagName('body')[0].style.zoom = zoom + '%';
+         localStorage.setItem('zoom', zoom);
+      }
+
+      function zoomOut() {
+         if (zoom > 100) {
+            zoom -= 20;
+            document.getElementsByTagName('body')[0].style.zoom = zoom + '%';
+            localStorage.setItem('zoom', zoom);
+         }
+      }
+   </script>
 </body>
 
 </html>

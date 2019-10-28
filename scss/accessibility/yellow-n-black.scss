@@ -1,0 +1,81 @@
+.gekko { color: #ffff00 !important; }
+html {
+   body {
+      background: #000000 !important;
+      background: #000000;
+      a {
+         :link, :visited {
+            text-decoration: underline;
+            color: #ffff00;
+         }
+      }
+      a:not(.noFilterAP) {
+         text-decoration: underline;
+         color: #ffff00 !important;
+         background: #000000 !important;
+         border-color: #ffffff !important;
+         :before { border-color: #000000 !important; }
+         span { color: #ffff00 !important; }
+      }
+      a:not(.noFilterAP):before { color: #ffff00 !important; }
+      a:not(.noFilterAP):link,
+      a:not(.noFilterAP):visited,
+      a:not(.noFilterAP):hover {
+         text-decoration: underline;
+         color: #ffff00 !important;
+         background: #000000 !important;
+         border-color: #ffffff !important;
+         :before { color: #ffff00 !important; }
+         span { color: #ffff00 !important; }
+      }
+      p:not(.noFilterAP),
+      b:not(.noFilterAP),
+      li:not(.noFilterAP),
+      ul:not(.noFilterAP),
+      div:not(.noFilterAP),
+      td:not(.noFilterAP),
+      tr:not(.noFilterAP),
+      h1:not(.noFilterAP),
+      h2:not(.noFilterAP),
+      h3:not(.noFilterAP),
+      h4:not(.noFilterAP),
+      h5:not(.noFilterAP),
+      h6:not(.noFilterAP),
+      span:not(.noFilterAP),
+      label:not(.noFilterAP),
+      button:not(.noFilterAP),
+      section:not(.noFilterAP),
+      header:not(.noFilterAP),
+      footer:not(.noFilterAP),
+      article:not(.noFilterAP),
+      article:not(.noFilterAP),
+      aside:not(.noFilterAP) {
+         color: #ffffff !important;
+         background: #000000;
+         border-color: #ffffff !important;
+      }
+      input[type='radio']:empty ~ label:before { background: #000000 !important; }
+      input[type='radio']:checked ~ label:before { background: #ffffff !important; }
+      input[type='text'],
+      select[type='text'] { border: 1px solid #ffffff !important; }
+      input:not(.noFilterAP),
+      select:not(.noFilterAP) {
+         color: #ffffff !important;
+         background: #000000 !important;
+         border-color: #ffffff !important;
+      }
+      div, h1, h2, h3 {
+         :before, :after { background: transparent; }
+      }
+      div:not(.noFilterAP):not([id=""]):not([style^="background-image:url"]),
+      section:not(.noFilterAP):not([id=""]):not([style^="background-image:url"]),
+      nav:not(.noFilterAP):not([id=""]):not([style^="background-image:url"]) { background: #000000 !important; }
+      div:not(.noFilterAP):not([id=""]):not([style^="background-image:url"]) input,
+      section:not(.noFilterAP):not([id=""]):not([style^="background-image:url"]) input,
+      nav:not(.noFilterAP):not([id=""]):not([style^="background-image:url"]) input,
+      div:not(.noFilterAP):not([id=""]):not([style^="background-image:url"]) button,
+      section:not(.noFilterAP):not([id=""]):not([style^="background-image:url"]) button,
+      nav:not(.noFilterAP):not([id=""]):not([style^="background-image:url"]) button { background: #000000 !important; }
+      li:hover:not([style^="background-image:url"]) { background: #000000 !important; }
+   }
+}
