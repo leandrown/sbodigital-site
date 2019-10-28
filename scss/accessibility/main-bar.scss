@@ -1,0 +1,134 @@
+// sass --watch scss/accessibility:css/accessibility --style compressed
+
+/* Accessibility Bar */
+body {
+   .accessibility-bar {
+      font-family: 'Arial', 'Helvetica', sans-serif;
+      background: #eee;
+      padding: 2px 0;
+   }
+   .accessibility-bar * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+   }
+   .accessibility-bar *:before,
+   .accessibility-bar *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+   }
+   .accessibility-bar ul {
+      margin-bottom: 0;
+      margin-top: 0;
+      padding: 0;
+      display: flex;
+   }
+   .accessibility-bar ul li {
+      display: inline-block;
+      position: relative;
+   }
+   .accessibility-bar ul li a {
+      display: block;
+      padding: 0 6px;
+      line-height: 33px;
+      font-size: 14px;
+      color: #555;
+   }
+   .accessibility-bar ul li a i {
+      font-size: 16px;
+      padding-right: 2px;
+   }
+   .accessibility-bar .container .row {
+      display: flex;
+      justify-content: space-between;
+   }
+   .accessibility-bar .language-bar { padding: 0; }
+   .accessibility-bar .language-bar a { padding: 0 4px; }
+   .accessibility-bar .language-bar a img { width: 28px; }
+   .accessibility-bar ul li a.gm5zoom {
+      font-size: 17px;
+      font-weight: 700;
+      padding: 0 10px;
+   }
+   .accessibility-bar ul li a:hover {
+      text-decoration: underline;
+      color: inherit;
+   }
+   .accessibility-bar ul li a:focus {
+      outline: 3px solid rgba(85, 85, 85, 0.7);
+      text-decoration: none;
+      color: #000;
+   }
+   .accessibility-bar .dautoniveis {
+      position: absolute;
+      width: 280px;
+      overflow: hidden;
+      background: #eee;
+      transition: all 300ms ease;
+   }
+   .accessibility-bar .dautoniveis.closed {
+      height: 0;
+      opacity: 0;
+      display: none;
+   }
+   .accessibility-bar .dautoniveis.opened {
+      height: auto;
+      opacity: 1;
+      display: block;
+   }
+   .accessibility-bar .dautoniveis ul {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: block;
+   }
+   .accessibility-bar .dautoniveis ul li {
+      display: block;
+      overflow: hidden;
+   }
+   .accessibility-bar .dautoniveis ul li a {
+      border-top: 1px solid #555;
+      padding: 2px 10px;
+      color: #555;
+      font-weight: 600;
+   }
+   .accessibility-bar .dautoniveis ul li a:focus {
+      outline: 3px solid rgba(85, 85, 85, 0.7);
+      color: #000000;
+   }
+}
+
+@media (max-width: 992px)
+{
+  .accessibility-bar ul li { float: left; }
+  .accessibility-bar ul li a span { display: none; }
+  .accessibility-bar ul li.zoomButtons { display: none; }
+  .accessibility-bar .hidden-sm, .accessibility-bar .hidden-xs { display: none !important; }
+  .accessibility-bar .dautoniveis {
+    width: 320px;
+    right: -90px;
+  }
+  .accessibility-bar .dautoniveis li { width: 100%; }
+}
+@media (max-width: 991px) and (min-width: 768px)
+{
+  .accessibility-bar .hidden-sm { display: none !important; }
+}
+@media (max-width: 768px)
+{
+  .hidden-xs { display: none !important; }
+  .accessibility-bar ul li a i {
+      font-size: 22px;
+      text-decoration: none;
+      margin: 4px;
+      padding: 6px;
+   }
+  .accessibility-bar .dautoniveis {
+      width: 280px;
+      right: -81px;
+  }
+}
+@media (max-width: 1024px) {
+   .accessibility-bar .hidden-sm { display: none !important; }
+}
