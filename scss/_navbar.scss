@@ -1,9 +1,7 @@
 header {
    #main-menu {
       top: 36px;
-   }
-   #brand {
-      background: transparent;
+      z-index: 900;
    }
    .navbar {
       width: 100%;
