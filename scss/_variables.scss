@@ -3,17 +3,22 @@
 // Color overrides
 
 // Set a custom color
+$title: #333843 !default;
+$subtitle: #8c919b !default;
 $menu-item-base:#2a2a2a !default;
 $menu-item-focus: #00ada4 !default;
-
-// Set primary color to orange
+$box-title: $menu-item-focus !default;
+$box-content: #606060 !default;
+$box-border: #008388 !default;
 $primary: #0c0c0c !default;
+$secondary: #dedede !default;
 
 // Font overrides
 $font-family-base: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$font-family-base-size: 14px;
+$font-family-base-size: 14px !default;
 
 $font-family-menu: $font-family-base !default;
 
 // Custom variables
-$navbar-height: 72px;
+$navbar-height: 68px !default;
+$navbar-mob-height: 72px !default;
