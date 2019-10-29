@@ -1,4 +1,7 @@
 header {
+   #main-menu {
+      top: 36px;
+   }
    #brand {
       background: transparent;
    }
@@ -8,6 +11,7 @@ header {
       background: #ffffff 0 0 no-repeat padding-box;
       opacity: 1;
       .desk {
+         width: 50vw;
          ul {
             display: flex;
             justify-content: space-evenly;
@@ -15,6 +19,7 @@ header {
                list-style: none;
                a {
                   font-family: $font-family-base;
+                  font-size: $font-family-base-size;
                   color: $menu-item-base;
                   text-decoration: none;
                }

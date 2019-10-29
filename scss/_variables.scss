@@ -12,10 +12,11 @@ $box-content: #606060 !default;
 $box-border: #008388 !default;
 $primary: #0c0c0c !default;
 $secondary: #dedede !default;
+$footer-background: $title !default;
 
 // Font overrides
 $font-family-base: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$font-family-base-size: 14px !default;
+$font-family-base-size: 16px !default;
 
 $font-family-menu: $font-family-base !default;
 
