@@ -19,8 +19,20 @@
       text-transform: capitalize;
    }
 }
+h2, h6 {
+   font-family: $font-family-base;
+   margin: 0;
+   opacity: 1;
+}
+h2 {
+   color: $title;
+   font-size: 36px;
+}
+h6 {
+   color: $subtitle;
+   font-size: 14px;
+}
 #news {
-   display: flex;
    padding: 4rem 0;
    .col { padding: 1em 75px 3em 75px; }
    .card {
@@ -63,35 +75,41 @@
       border-radius: 0;
       opacity: 1;
    }
-   h2, h6 {
-      font-family: $font-family-base;
-      margin: 0;
-      opacity: 1;
-   }
-   h2 {
-      color: $title;
-      font-size: 36px;
-   }
-   h6 {
-      color: $subtitle;
-      font-size: 14px;
-   }
 }
 #members {
+   .members-background {
+      padding: 8.5em 0;
+      width: 100%;
+      height: 500px;
+      background: url('../img/young-pharmacist-on-white-background.png') center center no-repeat;
+      background-size: cover;
+   }
    li {
-      padding: 1rem 0;
+      padding: 0.5rem 0;
+      font-size: 16px;
       i {
          color: $focus;
          line-height: 5em;
          padding-right: 2em;
       }
    }
-   .members-background {
-      width: 100%;
-      height: 500px;
-      background: url('../img/young-pharmacist-on-white-background.png') center center no-repeat;
-      background-size: cover;
+   .btn {
+      width: 16em;
+      height: 4em;
+      margin-left: 2.5em;
+      color: $focus;
+      border-radius: 0;
+      border-color: $focus;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      i { padding-left: 2rem; }
    }
+   .btn:hover { color: #ffffff; }
+}
+#services {
+   padding: 4rem 0;
+   .col { padding: 1em 75px 3em 75px; }
 }
 footer {
    height: 300px;
