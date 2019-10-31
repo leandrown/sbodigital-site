@@ -8,38 +8,269 @@
 
    <title>Ficha de Associação Individual - SBO Digital</title>
 
-   <link rel="stylesheet" media="screen" href="css/theme.css">
+   <link rel="stylesheet" media="screen" href="css/sbod-theme.css">
+   <!-- Bootstrap -->
+   <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+   <!-- Accessibility Bar Styles -->
+   <link rel="stylesheet" media="screen" href="css/accessibility/accessibility.css">
+   <link rel="stylesheet" media="screen" href="css/accessibility/grayscale.css" id="grayscale" disabled>
+   <link rel="stylesheet" media="screen" href="css/accessibility/increase-contrast.css" id="increase_contrast" disabled>
+   <link rel="stylesheet" media="screen" href="css/accessibility/invert-color.css" id="invert_color" disabled>
+   <link rel="stylesheet" media="screen" href="css/accessibility/invert-grayscale.css" id="invert_grayscale" disabled>
+   <link rel="stylesheet" media="screen" href="css/accessibility/yellow-n-black.css" id="yellow_black" disabled>
 
+   <!-- Font Awesome -->
+   <script src="https://kit.fontawesome.com/af40653a1b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-   <h1>Ficha de Associação Individual</h1>
-   <form action="#" method="post">
-      <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
-      <input type="email" name="email" id="email" placeholder="E-mail" required>
-      <input type="text" name="rg" id="rg" placeholder="Número do RG" required>
-      <input type="text" name="cpf" id="cpf" placeholder="Número do CPF" required>
-      <input type="date" name="ataNasc" id="dataNasc" placeholder="Data de Nascimento" required>
-      <input type="tel" name="telefone" id="telefone" placeholder="Telefone fixo">
-      <input type="tel" name="celular" id="celular" placeholder="Telefone celular">
-      <input type="text" name="endereco" id="endereco" placeholder="Endereço" required>
-      <input type="text" name="cidade" id="cidade" placeholder="Cidade" required>
-      <input type="text" name="uf" id="uf" placeholder="UF" required>
-      <input type="text" name="cep" id="cep" placeholder="CEP" required>
-      <hr>
-      <input type="text" name="instituicao" id="instituicao" placeholder="Instituicao">
-      <input type="text" name="depto" id="depto" placeholder="Departamento">
-      <input type="text" name="disciplina" id="disciplina" placeholder="Disciplina">
-      <input type="tel" name="fone" id="fone" placeholder="Telefone do departamento">
-      <hr>
-      <label for="anuidade">Descrição do pagamento:</label>
-      <input type="checkbox" name="anuidade" id="anuidade"> Anuidade R$ 400,00
-      <hr>
-      <label for="pagamento">Forma de pagamento:*</label>
-      <input type="checkbox" name="pagamento" id="pagamento"> Depósito em Conta Corrente
-      <input type="checkbox" name="pagamento" id="pagamento"> Boleto
-      * enviado por e-mail
-   </form>
+   <!-- Accessibility Bar -->
+   <nav class="accessibility-bar fixed-top" id="topbar" role="menubar" aria-label="Barra de Acessibilidade">
+      <div class="container">
+         <div class="row">
+            <ul class="hidden-xs hidden-sm" aria-label="Navegação pela página">
+               <li role="menuitem">
+                  <a accesskey="1" href="#page-top" title="Ir para o Topo">
+                     <span lang="pt-br">Ir para o topo</span> <span>[1]</span>
+                  </a>
+               </li>
+               <li role="menuitem" class="closeContrast">
+                  <a accesskey="2" href="#services" title="Ir para Serviços">
+                     <span lang="pt-br">Ir para Serviços</span> <span>[2]</span>
+                  </a>
+               </li>
+               <li role="menuitem" class="closeContrast">
+                  <a accesskey="3" href="#contact" title="Ir para o rodapé">
+                     <span lang="pt-br">Ir para Contato</span> <span>[3]</span>
+                  </a>
+               </li>
+            </ul>
+            <ul aria-label="Controles de acessibilidade do site">
+               <li role="menuitem" class="closeContrast">
+                  <a href="#" title="Página de acessibilidade">
+                     <i class="fas fa-universal-access"></i>
+                     <span lang="pt-br">Acessibilidade</span>
+                  </a>
+               </li>
+               <li role="menuitem" class="zoomButtons">
+                  <a href="#" title="Ampliar tela" onclick="zoomIn()" class="zoomIn gm5zoom" id="zoomIn">
+                     <span lang="pt-br">A+</span>
+                  </a>
+               </li>
+               <li role="menuitem" class="zoomButtons closeContrast">
+                  <a href="#" title="Reduzir tela" onclick="zoomOut()" class="zoomOut gm5zoom" id="zoomOut">
+                     <span lang="pt-br">A-</span>
+                  </a>
+               </li>
+               <li role="menuitem" class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" title="Contraste" role="button" data-toggle="dropdown" aria-haspopup="true"
+                     aria-expanded="false">
+                     <i class="fas fa-adjust"></i>
+                     <span lang="pt-br">Contraste</span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" title="Preto, branco e amarelo" href="#" onclick="setStyle('yellow_black')">Preto, branco e amarelo</a>
+                     <a class="dropdown-item" title="Aumentar contraste" href="#" onclick="setStyle('increase_contrast')">Aumentar contraste</a>
+                     <a class="dropdown-item" title="Tons de cinza" href="#" onclick="setStyle('grayscale')">Tons de cinza</a>
+                     <a class="dropdown-item" title="Inverter tons de cinza" href="#" onclick="setStyle('invert_grayscale')">Inverter tons de cinza</a>
+                     <a class="dropdown-item" title="Inverter cores" href="#" onclick="setStyle('invert_color')">Inverter cores</a>
+                     <a class="dropdown-item" title="Cores originais" href="#" onclick="setStyle()">Cores originais</a>
+                  </div>
+               </li>
+               <li role="menuitem">
+                  <a href="#" title="Acessar a página de mapa do site" target="_self" title="Mapa do Site">
+                     <i class="fas fa-sitemap"></i>
+                     <span lang="pt-br">Mapa do site</span>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav> <!-- End Accessibility Bar -->
+
+   <header>
+      <!-- Navigation Bar -->
+      <section class="navbar fixed-top" id="main-menu">
+         <div class="container">
+            <a href="/" target="_self"><img src="svg/sbod-main-logo.svg" alt="SBO Digital"></a>
+            <nav class="desk">
+               <ul role="navigation">
+                  <li><a href="/">Home</a></li>
+                  <li><a href="#">Quem Somos</a></li>
+                  <li><a href="#">Notícias</a></li>
+                  <li><a href="#">Membros</a></li>
+                  <li><a href="contato.html">Contato</a></li>
+                  <li><a href="#"><i class="fas fa-user"></i></a></li>
+               </ul>
+            </nav>
+         </div>
+      </section> <!-- End Navigation Bar -->
+      <!-- Navigation Bar Mobile -->
+      <section class="navbar" id="collapsible-menu">
+         <nav class="mob">
+            <ul role="navigation">
+               <li><a href="/">Home</a></li>
+               <li><a href="#">Quem Somos</a></li>
+               <li><a href="#">Notícias</a></li>
+               <li><a href="#">Membros</a></li>
+               <li><a href="contato.html">Contato</a></li>
+               <li><a href="#"><i class="fas fa-user"></i></a></li>
+            </ul>
+         </nav>
+      </section> <!-- End Navigation Bar Mobile -->
+   </header>
+   <section id="form-area">
+      <div class="row justify-content-center">
+         <h1>Ficha de Associação Individual</h1>
+      </div>
+      <div class="row justify-content-center">
+         <div class="col-lg-6">
+            <form action="#" method="post">
+               <div class="form-group">
+                  <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+               </div>
+               <div class="form-group">
+                  <input type="email" name="email" id="email" placeholder="E-mail" required>
+               </div>
+               <div class="form-group form-content-justify">
+                  <input type="text" name="rg" id="rg" placeholder="Número do RG" required>
+                  <input type="text" name="cpf" id="cpf" placeholder="Número do CPF" required>
+               </div>
+               <div class="form-group">
+                  <input type="date" name="ataNasc" id="dataNasc" placeholder="Data de Nascimento" required>
+               </div>
+               <div class="form-group form-content-justify">
+                  <input type="tel" name="telefone" id="telefone" placeholder="Telefone fixo">
+                  <input type="tel" name="celular" id="celular" placeholder="Telefone celular">
+               </div>
+               <div class="form-group">
+                  <input type="text" name="endereco" id="endereco" placeholder="Endereço" required>
+               </div>
+               <div class="form-group form-content-justify">
+                  <input type="text" name="cidade" id="cidade" placeholder="Cidade" required>
+                  <input type="text" name="uf" id="uf" placeholder="UF" required>
+                  <input type="text" name="cep" id="cep" placeholder="CEP" required>
+               </div>
+               <hr class="divider my-4">
+               <div class="form-group">
+                  <input type="text" name="instituicao" id="instituicao" placeholder="Instituicao">
+               </div>
+               <div class="form-group">
+                  <input type="text" name="depto" id="depto" placeholder="Departamento">
+               </div>
+               <div class="form-group">
+                  <input type="text" name="disciplina" id="disciplina" placeholder="Disciplina">
+               </div>
+               <div class="form-group">
+                  <input type="tel" name="fone" id="fone" placeholder="Telefone do departamento">
+               </div>
+               <div class="form-group">
+                  <div class="col-md-6">
+                     <label for="anuidade">Descrição do pagamento:</label>
+                     <input type="checkbox" name="anuidade" id="anuidade"> Anuidade R$ 400,00
+                  </div>
+               </div>
+               <hr class="divider my-4">
+               <div class="form-group">
+                  <div class="col-md-4">
+                     <label for="pagamento">Forma de pagamento*:</label>
+                     <input type="checkbox" name="pagamento" id="pagamento"> Depósito em Conta Corrente
+                     <input type="checkbox" name="pagamento" id="pagamento"> Boleto
+                  </div>
+               </div>
+               * enviado por e-mail
+               <div class="form-group">
+                  <input type="submit" value="Enviar">
+               </div>
+            </form>
+         </div>
+      </div>
+   </section>
+
+   <footer>
+      <div class="container">
+         <div class="row">
+            <div class="col">
+               <a href="/"><img src="svg/sbod-footer-logo.svg" alt="SBO Digital"></a>
+            </div>
+            <address class="col">
+               <h6>Lorem ipsum dolor sit.</h6>
+               <ul>
+                  <li>Lorem ipsum dolor sit.</li>
+                  <li>Lorem ipsum dolor sit.</li>
+                  <li>Lorem ipsum dolor sit.</li>
+               </ul>
+            </address>
+            <address class="col">
+               <h6>Lorem ipsum dolor sit.</h6>
+               <ul>
+                  <li>Lorem ipsum dolor sit.</li>
+                  <li>Lorem ipsum dolor sit.</li>
+                  <li>Lorem ipsum dolor sit.</li>
+               </ul>
+            </address>
+            <div class="col social-media">
+               <h6>Redes Sociais</h6>
+               <div class="social-media-links">
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-twitter"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+   <!-- Bootstrap -->
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <!-- Accessibility Bar -->
+   <script src="js/jquery-accessibility.min.js"></script>
+   <script>
+      var zoom;
+
+      function setStyle(styleid) {
+         var increase_contrast = document.getElementById('increase_contrast');
+         var yellow_black = document.getElementById('yellow_black');
+         var invert_grayscale = document.getElementById('invert_grayscale');
+         var invert_color = document.getElementById('invert_color');
+         var grayscale = document.getElementById('grayscale');
+
+         increase_contrast.disabled = true;
+         yellow_black.disabled = true;
+         invert_grayscale.disabled = true;
+         invert_color.disabled = true;
+         grayscale.disabled = true;
+
+         if (styleid) {
+            var atual = document.getElementById(styleid);
+            atual.disabled = false;
+         }
+      }
+
+      window.onload = setStyle();
+
+      function zoomInit() {
+         zoom = parseInt(localStorage.getItem('zoom') || 100);
+         document.getElementsByTagName('body')[0].style.zoom = zoom + '%';
+      }
+
+      zoomInit();
+
+      function zoomIn() {
+         zoom += 20;
+         document.getElementsByTagName('body')[0].style.zoom = zoom + '%';
+         localStorage.setItem('zoom', zoom);
+      }
+
+      function zoomOut() {
+         if (zoom > 100) {
+            zoom -= 20;
+            document.getElementsByTagName('body')[0].style.zoom = zoom + '%';
+            localStorage.setItem('zoom', zoom);
+         }
+      }
+   </script>
 </body>
 
 </html>

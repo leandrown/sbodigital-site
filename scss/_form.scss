@@ -1,7 +1,50 @@
+#form-area {
+   margin-top: 6em;
+   padding: 3em 1em;
+}
 form {
    width: 600px;
    background: #eee;
-   input {
-      width: 70%;
+   .form-content-justify {
+      display: flex;
+      justify-content: space-between;
+   }
+   h1 {
+      font-family: $font-family-base;
+      color: $title;
+   }
+   label {
+      font-family: $font-family-base;
+      font-size: $font-family-base-size;
+   }
+   #rg, #cpf { width: 18rem; }
+   #cidade { width: 24rem; }
+   #uf { width: 4rem; }
+   #cep { width: 8rem; }
+   input[type=text], input[type=email] { width: 100%; }
+   input[type=date] { width: 10rem; }
+   input[type=tel] { width: 18rem; }
+   input[type=date],
+   input[type=text],
+   input[type=email],
+   input[type=tel] {
+      border: solid 1px $box-border;
+      border-radius: 0;
+      padding: 10px;
+      color: $primary;
+   }
+   input[type=submit] {
+      width: 12em;
+      height: 3em;
+      color: $box-border;
+      border-radius: 0;
+      border-color: $box-border;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+   }
+   input[type=submit]:hover {
+      background: $box-border;
+      color: #eee;
    }
 }
