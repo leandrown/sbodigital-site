@@ -123,7 +123,23 @@ h6 {
    p { margin-top: 1em; }
 }
 footer {
-   padding: 2em 5em;
+   padding: 3em 5em;
    height: 300px;
+   color: $secondary;
    background: $footer-background;
+   .social-media { text-align: center; }
+   .social-media-links {
+      font-size: 2em;
+      i { margin: 0.2em; }
+   }
+   img { padding: 1em 2em; }
+   address, .social-media { padding-top: 1em; }
+   h6 {
+      color: $secondary;
+      text-transform: uppercase;
+   }
+   ul {
+      list-style: square;
+      padding: 0 1.2em;
+   }
 }
