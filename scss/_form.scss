@@ -4,7 +4,6 @@
 }
 form {
    margin: 2rem 0;
-   background: #eee;
    .form-content-justify {
       display: flex;
       justify-content: space-between;
@@ -16,6 +15,12 @@ form {
    label {
       font-family: $font-family-base;
       font-size: $font-family-base-size;
+      font-weight: bold;
+   }
+   span {
+      font-size: 14px;
+      font-style: italic;
+      color: #dd0000;
    }
    #rg, #cpf { width: 18rem; }
    #cidade { width: 24rem; }
@@ -34,7 +39,7 @@ form {
       color: $primary;
    }
    input[type=submit] {
-      width: 12em;
+      width: 14em;
       height: 3em;
       margin: 6px;
       color: $box-border;

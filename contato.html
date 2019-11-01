@@ -153,7 +153,7 @@
                </div>
                <hr class="divider my-4">
                <div class="form-group">
-                  <input type="text" name="instituicao" id="instituicao" placeholder="Instituicao">
+                  <input type="text" name="instituicao" id="instituicao" placeholder="Instituição">
                </div>
                <div class="form-group">
                   <input type="text" name="depto" id="depto" placeholder="Departamento">
@@ -167,18 +167,23 @@
                <div class="form-group">
                   <div class="col-md-6">
                      <label for="anuidade">Descrição do pagamento:</label>
-                     <input type="checkbox" name="anuidade" id="anuidade"> Anuidade R$ 400,00
+                     <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="anuidade" id="anuidade"> Anuidade R$ 400,00
+                     </div>
                   </div>
                </div>
-               <hr class="divider my-4">
                <div class="form-group">
                   <div class="col-md-6">
-                     <label for="pagamento">Forma de pagamento*:</label>
-                     <input type="checkbox" name="pagamento" id="pagamento"> Depósito em Conta Corrente
-                     <input type="checkbox" name="pagamento" id="pagamento"> Boleto
+                     <label for="pagamento">Forma de pagamento<span>*</span>:</label>
+                     <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="pagamento" id="pagamento"> Depósito em Conta Corrente
+                     </div>
+                     <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="pagamento" id="pagamento"> Boleto
+                     </div>
                   </div>
                </div>
-               * enviado por e-mail
+               <span>* enviado por e-mail</span>
                <div class="form-group text-center">
                   <input type="submit" value="Enviar">
                </div>
