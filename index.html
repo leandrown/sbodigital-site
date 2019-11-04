@@ -91,34 +91,39 @@
 
    <header>
       <!-- Navigation Bar -->
-      <section class="navbar fixed-top" id="main-menu">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
          <div class="container">
-            <a href="/" target="_self"><img src="svg/sbod-main-logo.svg" alt="SBO Digital"></a>
-            <nav class="desk">
-               <ul role="navigation">
-                  <li><a href="/">Home</a></li>
-                  <li><a href="#">Quem Somos</a></li>
-                  <li><a href="#">Notícias</a></li>
-                  <li><a href="#">Membros</a></li>
-                  <li><a href="contato.html">Contato</a></li>
-                  <li><a href="#"><i class="fas fa-user"></i></a></li>
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+               <img src="svg/sbod-main-logo.svg" alt="SBO Digital" class="hidden-xs hidden-sm">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+               aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+               <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#">Quem Somos</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#">Notícias</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="membros.html">Membros</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#">Contato</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#"><i class="fas fa-user"></i> Entrar</a>
+                  </li>
                </ul>
-            </nav>
+            </div>
          </div>
-      </section> <!-- End Navigation Bar -->
-      <!-- Navigation Bar Mobile -->
-      <section class="navbar" id="collapsible-menu">
-         <nav class="mob">
-            <ul role="navigation">
-               <li><a href="/">Home</a></li>
-               <li><a href="#">Quem Somos</a></li>
-               <li><a href="#">Notícias</a></li>
-               <li><a href="#">Membros</a></li>
-               <li><a href="contato.html">Contato</a></li>
-               <li><a href="#"><i class="fas fa-user"></i></a></li>
-            </ul>
-         </nav>
-      </section> <!-- End Navigation Bar Mobile -->
+      </nav> <!-- end navigation -->
       <!-- Banner -->
       <section>
          <div class="banner">
@@ -138,7 +143,7 @@
                <h2>Lorem ipsum dolor sit.</h2>
             </div>
          </div>
-         <div class="row justify-content-center">
+         <div class="row">
             <div class="card card-border">
                <div class="card-body">
                   <h6 class="card-title">Policy Paper</h6>
@@ -177,7 +182,7 @@
       <div class="members-background">
          <div class="container">
             <div class="row">
-               <div class="col-sm-5">
+               <div class="check-list">
                   <ul class="fa-ul">
                      <li>
                         <i class="fa-li fa fa-check"></i>

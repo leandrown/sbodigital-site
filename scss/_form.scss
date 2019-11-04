@@ -23,12 +23,12 @@ form {
       color: #dd0000;
    }
    #rg, #cpf { width: 18rem; }
-   #cidade { width: 24rem; }
+   #cidade { width: 80%; }
    #uf { width: 4rem; }
    #cep { width: 8rem; }
    input[type=text], input[type=email] { width: 100%; }
    input[type=date] { width: 10rem; }
-   input[type=tel] { width: 18rem; }
+   input[type=tel] { width: 18em; }
    input[type=date],
    input[type=text],
    input[type=email],

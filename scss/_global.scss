@@ -7,7 +7,7 @@
    .title {
       top: 50%;
       left: 10%;
-      width: 50%;
+      width: 34em;
       color: #ffffff;
       position: absolute;
    }
@@ -33,11 +33,13 @@ h6 {
    font-size: 14px;
 }
 #news {
-   padding: 4rem 0;
+   margin: 2rem 0;
+   .row { justify-content: space-evenly; }
    .col { padding: 1em 75px 3em 75px; }
    .card {
       width: 20rem;
-      margin-right: 1rem;
+      // margin-right: 1rem;
+      margin-bottom: 2rem;
       background: $box-border-bg;
       .card-body {
          padding: 1.5rem;
@@ -69,7 +71,7 @@ h6 {
          font-weight: 600;
       }
    }
-   .card:last-child { margin-right: 0; }
+   // .card:last-child { margin-right: 0; }
    .card-border {
       border: 1px solid $box-border;
       border-radius: 0;
@@ -83,6 +85,9 @@ h6 {
       height: 500px;
       background: url('../img/young-pharmacist-on-white-background.png') center center no-repeat;
       background-size: cover;
+   }
+   .check-list {
+      max-width: 25em;
    }
    li {
       padding: 0.5rem 0;
@@ -129,7 +134,8 @@ hr.divider {
    }
 footer {
    padding: 3em 5em;
-   height: 300px;
+   width: 100%;
+   min-height: 300px;
    color: $secondary;
    background: $footer-background;
    .social-media { text-align: center; }
@@ -146,5 +152,42 @@ footer {
    ul {
       list-style: square;
       padding: 0 1.2em;
+   }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+   footer {
+      .social-media-links {
+         font-size: 1.5em;
+      }
+   }
+}
+
+@media (max-width: 576px) {
+   #form-area {
+      h1 {
+         font-size: 2em;
+         text-align: center;
+      }
+   }
+   .banner {
+      .title {
+         width: 22em;
+         left: 1em;
+      }
+   }
+   #members {
+      .members-background {
+         padding: 3.5em 0;
+         background: #ececec;
+      }
+      .check-list {
+         width: 20em;
+         margin-left: 2em;
+      }
+      .btn { margin: 1em auto; }
    }
 }
