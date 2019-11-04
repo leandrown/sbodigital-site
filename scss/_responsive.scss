@@ -16,7 +16,10 @@
    header {
       #collapsible-menu {
          display: block;
+         top: 2em;
          background: $focus;
+         .mob {
+         }
       }
       .navbar {
          display: none;
@@ -27,9 +30,6 @@
 @media (max-width: 576px) {
    header {
       .navbar {
-         div {
-            .desk { width: 30em; }
-         }
          .mob { background: blue; }
       }
    }
