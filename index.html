@@ -9,16 +9,9 @@
    <title>Início - SBO Digital</title>
 
    <link rel="stylesheet" media="screen" href="css/sbod-theme.css">
+
    <!-- Bootstrap -->
    <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
-
-   <!-- Accessibility Bar Styles -->
-   <link rel="stylesheet" media="screen" href="css/accessibility/accessibility.css">
-   <link rel="stylesheet" media="screen" href="css/accessibility/grayscale.css" id="grayscale" disabled>
-   <link rel="stylesheet" media="screen" href="css/accessibility/increase-contrast.css" id="increase_contrast" disabled>
-   <link rel="stylesheet" media="screen" href="css/accessibility/invert-color.css" id="invert_color" disabled>
-   <link rel="stylesheet" media="screen" href="css/accessibility/invert-grayscale.css" id="invert_grayscale" disabled>
-   <link rel="stylesheet" media="screen" href="css/accessibility/yellow-n-black.css" id="yellow_black" disabled>
 
    <!-- Animation On Scroll -->
    <link rel="stylesheet" media="screen" href="css/aos.css">
@@ -29,70 +22,6 @@
 </head>
 
 <body>
-   <!-- Accessibility Bar -->
-   <nav class="accessibility-bar fixed-top" id="topbar" role="menubar" aria-label="Barra de Acessibilidade">
-      <div class="container">
-         <div class="row">
-            <ul class="hidden-xs hidden-sm" aria-label="Navegação pela página">
-               <li role="menuitem">
-                  <a accesskey="1" href="#page-top" title="Ir para o Topo">
-                     <span lang="pt-br">Ir para o topo</span> <span>[1]</span>
-                  </a>
-               </li>
-               <li role="menuitem" class="closeContrast">
-                  <a accesskey="2" href="#services" title="Ir para Serviços">
-                     <span lang="pt-br">Ir para Serviços</span> <span>[2]</span>
-                  </a>
-               </li>
-               <li role="menuitem" class="closeContrast">
-                  <a accesskey="3" href="#contact" title="Ir para o rodapé">
-                     <span lang="pt-br">Ir para Contato</span> <span>[3]</span>
-                  </a>
-               </li>
-            </ul>
-            <ul aria-label="Controles de acessibilidade do site">
-               <li role="menuitem" class="closeContrast">
-                  <a href="#" title="Página de acessibilidade">
-                     <i class="fas fa-universal-access"></i>
-                     <span lang="pt-br">Acessibilidade</span>
-                  </a>
-               </li>
-               <li role="menuitem" class="zoomButtons">
-                  <a href="#" title="Ampliar tela" onclick="zoomIn()" class="zoomIn gm5zoom" id="zoomIn">
-                     <span lang="pt-br">A+</span>
-                  </a>
-               </li>
-               <li role="menuitem" class="zoomButtons closeContrast">
-                  <a href="#" title="Reduzir tela" onclick="zoomOut()" class="zoomOut gm5zoom" id="zoomOut">
-                     <span lang="pt-br">A-</span>
-                  </a>
-               </li>
-               <li role="menuitem" class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" title="Contraste" role="button" data-toggle="dropdown" aria-haspopup="true"
-                     aria-expanded="false">
-                     <i class="fas fa-adjust"></i>
-                     <span lang="pt-br">Contraste</span>
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                     <a class="dropdown-item" title="Preto, branco e amarelo" href="#" onclick="setStyle('yellow_black')">Preto, branco e amarelo</a>
-                     <a class="dropdown-item" title="Aumentar contraste" href="#" onclick="setStyle('increase_contrast')">Aumentar contraste</a>
-                     <a class="dropdown-item" title="Tons de cinza" href="#" onclick="setStyle('grayscale')">Tons de cinza</a>
-                     <a class="dropdown-item" title="Inverter tons de cinza" href="#" onclick="setStyle('invert_grayscale')">Inverter tons de cinza</a>
-                     <a class="dropdown-item" title="Inverter cores" href="#" onclick="setStyle('invert_color')">Inverter cores</a>
-                     <a class="dropdown-item" title="Cores originais" href="#" onclick="setStyle()">Cores originais</a>
-                  </div>
-               </li>
-               <li role="menuitem">
-                  <a href="#" title="Acessar a página de mapa do site" target="_self" title="Mapa do Site">
-                     <i class="fas fa-sitemap"></i>
-                     <span lang="pt-br">Mapa do site</span>
-                  </a>
-               </li>
-            </ul>
-         </div>
-      </div>
-   </nav> <!-- End Accessibility Bar -->
-
    <header>
       <!-- Navigation Bar -->
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
