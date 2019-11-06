@@ -1,4 +1,5 @@
-// sass --watch scss/theme.scss css/theme.css --style compressed
+// sass --watch scss/:css/ --style compressed
+
 // Import custom variables (overrides Bootstrap default variables)
 @import "./variables";
 
