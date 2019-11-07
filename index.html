@@ -10,7 +10,7 @@
 
    <link rel="stylesheet" media="screen" href="css/sbod-theme.css">
 
-   <!-- Bootstrap -->
+   <!-- Bootstrap 4 -->
    <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
 
    <!-- Animation On Scroll -->
@@ -33,7 +33,7 @@
                aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <nav class="collapse navbar-collapse shift" id="navbarResponsive">
                <ul class="navbar-nav ml-auto my-2 my-lg-0">
                   <li class="nav-item">
                      <a class="nav-link js-scroll-trigger" href="/">Home</a>
@@ -54,7 +54,7 @@
                      <a class="nav-link js-scroll-trigger" href="#"><i class="fas fa-user"></i> Entrar</a>
                   </li>
                </ul>
-            </div>
+            </nav>
          </div>
       </nav> <!-- end navigation -->
       <!-- Banner -->
@@ -236,57 +236,11 @@
          </div>
       </div>
    </footer>
-
+   <!-- jQuery and Bootstrap 4 -->
    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-   <!-- Bootstrap -->
    <script src="js/bootstrap.bundle.min.js"></script>
-   <!-- Accessibility Bar -->
-   <script src="js/jquery-accessibility.min.js"></script>
    <script>
-      var zoom;
       AOS.init();
-
-      function setStyle(styleid) {
-         var increase_contrast = document.getElementById('increase_contrast');
-         var yellow_black = document.getElementById('yellow_black');
-         var invert_grayscale = document.getElementById('invert_grayscale');
-         var invert_color = document.getElementById('invert_color');
-         var grayscale = document.getElementById('grayscale');
-
-         increase_contrast.disabled = true;
-         yellow_black.disabled = true;
-         invert_grayscale.disabled = true;
-         invert_color.disabled = true;
-         grayscale.disabled = true;
-
-         if (styleid) {
-            var atual = document.getElementById(styleid);
-            atual.disabled = false;
-         }
-      }
-
-      window.onload = setStyle();
-
-      function zoomInit() {
-         zoom = parseInt(localStorage.getItem('zoom') || 100);
-         document.getElementsByTagName('body')[0].style.zoom = zoom + '%';
-      }
-
-      zoomInit();
-
-      function zoomIn() {
-         zoom += 20;
-         document.getElementsByTagName('body')[0].style.zoom = zoom + '%';
-         localStorage.setItem('zoom', zoom);
-      }
-
-      function zoomOut() {
-         if (zoom > 100) {
-            zoom -= 20;
-            document.getElementsByTagName('body')[0].style.zoom = zoom + '%';
-            localStorage.setItem('zoom', zoom);
-         }
-      }
    </script>
 </body>
 

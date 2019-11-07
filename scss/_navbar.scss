@@ -1,10 +1,50 @@
 header {
    #mainNav {
-      top: 2em;
       background: #ffffff;
       box-shadow: 0 0.5rem 1rem rgba(0,0,0,.2);
-      a.nav-link:hover {
-         color: $menu-item-focus;
+   }
+   nav {
+      ul {
+         li {
+            a, a:after, a:before {
+               transition: all .5s;
+            }
+         }
+      }
+      .shift {
+         ul {
+            li {
+               a {
+                  position: relative;
+                  z-index: 1;
+               }
+               a:hover {
+                  color: #ffffff !important;
+               }
+               a:after {
+                  display: block;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  bottom: 0;
+                  right: 0;
+                  margin: auto;
+                  width: 100%;
+                  height: 1px;
+                  content: '.';
+                  color: transparent;
+                  background: $menu-item-focus;
+                  visibility: none;
+                  opacity: 0;
+                  z-index: -1;
+               }
+               a:hover:after {
+                  opacity: 1;
+                  visibility: visible;
+                  height: 100%;
+               }
+            }
+         }
       }
    }
 }
