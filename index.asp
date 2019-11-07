@@ -23,7 +23,8 @@
 
 <body>
    <header>
-      <!--#include file="banner-and-menu.asp"-->
+      <!--#include file="menu.asp"-->
+      <!--#include file="banner.asp"-->
    </header>
 
    <!--#include file="home.asp"-->
