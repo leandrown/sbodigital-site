@@ -6,7 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-   <title>Ficha de Associação Individual - SBO Digital</title>
+   <title>SBODigital - Admissão de Novo Sócio</title>
 	<link href="css/padrao.css?novo" rel="stylesheet" type="text/css">
 	
    <link rel="stylesheet" media="screen" href="css/sbod-theme.css">
@@ -15,12 +15,11 @@
    <!-- Font Awesome -->
    <script src="https://kit.fontawesome.com/af40653a1b.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
 
    <header>
       <!-- Navigation Bar -->
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
          <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                <img src="svg/sbod-main-logo.svg" alt="SBO Digital">
@@ -55,15 +54,11 @@
       </nav> <!-- end navigation -->
    </header>
    
+      <section id="form-area">
    
     <div id="conteudo">
         <div class="centro">
            <div class="texto s_ext">
-
-
-    <!-- bootstrap -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> 
 
 
    <div class="titulo">
@@ -87,6 +82,41 @@
 		<h2>Dados Pessoais</h2><br>
 
 				
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
   
 			<div class="col-md-12">
 				<label><strong>Nome</strong></label><br>
@@ -262,10 +292,6 @@
 
      </div>
 
-	</div>
-
-</div>
-</div>
 
 </div>
 
