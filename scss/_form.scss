@@ -33,8 +33,7 @@ form {
    input[type=text],
    input[type=email],
    input[type=tel] {
-      border: solid 1px $box-border;
-      border-radius: 0;
+      height: 30px;
       padding: 10px;
       color: $primary;
       background: #ffffff;

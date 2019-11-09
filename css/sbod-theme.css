@@ -1,1 +1,343 @@
-header #mainNav{background:#fff;box-shadow:0 .5rem 1rem rgba(0,0,0,.2)}header nav ul li a,header nav ul li a:after,header nav ul li a:before{transition:all .5s}header nav .shift ul li a{position:relative;z-index:1}header nav .shift ul li a:hover{color:#fff !important}header nav .shift ul li a:after{display:block;position:absolute;top:0;left:0;bottom:0;right:0;margin:auto;width:100%;height:1px;content:".";color:transparent;background:#00ada4;visibility:none;opacity:0;z-index:-1}header nav .shift ul li a:hover:after{opacity:1;visibility:visible;height:100%}.banner{width:100%;height:428px;background:url("../img/Sans-titre-3.png") center 5em no-repeat;background-size:cover;position:relative}.banner .title{top:50%;left:10%;width:34em;color:#fff;position:absolute}.banner .title-center{text-align:center}.banner h5{font-weight:400;text-transform:capitalize}h2,h6{font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";margin:0;opacity:1}h2{color:#333843;font-size:36px}h6{color:#8c919b;font-size:14px}#news{margin:2rem 0}#news .row{justify-content:space-evenly}#news .col{padding:1em 75px 3em 75px}#news .card{width:20rem;margin-bottom:2rem;background:#008388}#news .card .card-body{padding:1.5rem;background:#fff;color:#606060}#news .card a,#news .card a:hover,#news .card a:visited{margin:8px;padding:6px 8px;color:#fff;font-size:12px;font-weight:bolder;text-align:right;text-decoration:none;text-transform:uppercase;cursor:pointer}#news .card a i,#news .card a:hover i,#news .card a:visited i{margin-left:1rem}#news .card h6,#news .card span{color:#00ada4;font-size:16px;font-weight:bold;text-transform:uppercase}#news .card p{padding-top:2rem;padding-bottom:1rem;font-size:14px;font-weight:600}#news .card-border{border:1px solid #076483;border-radius:0;opacity:1}#members .members-background{padding:8.5em 0;width:100%;height:500px;background:url("../img/young-pharmacist-on-white-background.png") center center no-repeat;background-size:cover}#members .check-list{max-width:25em}#members li{padding:.5rem 0;font-size:16px}#members li i{color:#00ada4;line-height:5em;padding-right:2em}#members .btn{width:16em;height:4em;margin-left:2.5em;color:#00ada4;border-radius:0;border-color:#00ada4;font-size:14px;font-weight:600;text-transform:uppercase}#members .btn i{padding-left:2rem}#members .btn:hover{color:#fff}#services{padding:4rem 0}#services .col{padding:1em 75px 2em 75px}#services img{margin-top:1em;margin-bottom:2em}#services h4{color:#008fac;font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px;text-transform:uppercase}#services p{margin-top:1em}hr.divider{max-width:3.25rem;border-width:.2rem;border-color:#076483}footer{padding:3em 5em;width:100%;min-height:300px;color:#dedede;background:#333843}footer .social-media{text-align:center}footer .social-media-links{font-size:2em}footer .social-media-links i{margin:.2em}footer img{padding:1em 2em}footer address,footer .social-media{padding-top:1em}footer h6{color:#dedede;text-transform:uppercase}footer ul{list-style:square;padding:0 1.2em}@media(max-width: 768px){#members .members-background{background:url("../img/young-pharmacist-on-white-background.png") right center no-repeat;padding:2em 0}#members .check-list{width:20em}footer .social-media-links{font-size:1.5em}}@media(max-width: 576px){#form-area h1{font-size:2em;text-align:center}#mainNav .navbar-brand img{width:4em}.banner .title{width:18em;left:1em;top:40%}#news .card{margin:1em}#members .members-background{background:#ececec;padding:3.5em 0}#members .check-list{width:20em;margin-left:1em}#members .btn{margin:1em auto}footer address ul{width:10em}}#form-area{margin-top:6em;padding:3em 1em}form{margin:2rem 0}form .form-content-justify{display:flex;justify-content:space-between}form h1{font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";color:#333843}form label{font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px;font-weight:bold}form span{font-size:14px;font-style:italic;color:#d00}form #rg,form #cpf{width:18rem}form #cidade{width:80%}form #uf{width:4rem}form #cep{width:8rem}form input[type=text],form input[type=email]{width:100%}form input[type=date]{width:10rem}form input[type=tel]{width:18em}form input[type=date],form input[type=text],form input[type=email],form input[type=tel]{border:solid 1px #076483;border-radius:0;padding:10px;color:#0c0c0c;background:#fff}form input[type=submit]{width:14em;height:3em;margin:6px;color:#076483;border-radius:0;border-color:#076483;background:#fff;font-size:14px;font-weight:600;text-transform:uppercase}form input[type=submit]:hover{background:#076483;color:#eee}/*# sourceMappingURL=sbod-theme.css.map */
+header #mainNav {
+  background: #ffffff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+header nav ul li a, header nav ul li a:after, header nav ul li a:before {
+  transition: all 0.5s;
+}
+header nav .shift ul li a {
+  position: relative;
+  z-index: 1;
+}
+header nav .shift ul li a:hover {
+  color: #ffffff !important;
+}
+header nav .shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: ".";
+  color: transparent;
+  background: #00ada4;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+header nav .shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+.banner {
+  width: 100%;
+  height: 428px;
+  background: url("../img/Sans-titre-3.png") center 5em no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.banner .title {
+  top: 50%;
+  left: 10%;
+  width: 34em;
+  color: #ffffff;
+  position: absolute;
+}
+.banner .title-center {
+  text-align: center;
+}
+.banner h5 {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+h2, h6 {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  opacity: 1;
+}
+
+h2 {
+  color: #333843;
+  font-size: 36px;
+}
+
+h6 {
+  color: #8c919b;
+  font-size: 14px;
+}
+
+#news {
+  margin: 2rem 0;
+}
+#news .row {
+  justify-content: space-evenly;
+}
+#news .col {
+  padding: 1em 75px 3em 75px;
+}
+#news .card {
+  width: 20rem;
+  margin-bottom: 2rem;
+  background: #008388;
+}
+#news .card .card-body {
+  padding: 1.5rem;
+  background: #ffffff;
+  color: #606060;
+}
+#news .card a, #news .card a:hover, #news .card a:visited {
+  margin: 8px;
+  padding: 6px 8px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bolder;
+  text-align: right;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#news .card a i, #news .card a:hover i, #news .card a:visited i {
+  margin-left: 1rem;
+}
+#news .card h6, #news .card span {
+  color: #00ada4;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#news .card p {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+#news .card-border {
+  border: 1px solid #076483;
+  border-radius: 0;
+  opacity: 1;
+}
+
+#members .members-background {
+  padding: 8.5em 0;
+  width: 100%;
+  height: 500px;
+  background: url("../img/young-pharmacist-on-white-background.png") center center no-repeat;
+  background-size: cover;
+}
+#members .check-list {
+  max-width: 25em;
+}
+#members li {
+  padding: 0.5rem 0;
+  font-size: 16px;
+}
+#members li i {
+  color: #00ada4;
+  line-height: 5em;
+  padding-right: 2em;
+}
+#members .btn {
+  width: 16em;
+  height: 4em;
+  margin-left: 2.5em;
+  color: #00ada4;
+  border-radius: 0;
+  border-color: #00ada4;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#members .btn i {
+  padding-left: 2rem;
+}
+#members .btn:hover {
+  color: #ffffff;
+}
+
+#services {
+  padding: 4rem 0;
+}
+#services .col {
+  padding: 1em 75px 2em 75px;
+}
+#services img {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+#services h4 {
+  color: #008fac;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  text-transform: uppercase;
+}
+#services p {
+  margin-top: 1em;
+}
+
+hr.divider {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: #076483;
+}
+
+footer {
+  padding: 3em 5em;
+  width: 100%;
+  min-height: 300px;
+  color: #dedede;
+  background: #333843;
+}
+footer .social-media {
+  text-align: center;
+}
+footer .social-media-links {
+  font-size: 2em;
+}
+footer .social-media-links i {
+  margin: 0.2em;
+}
+footer img {
+  padding: 1em 2em;
+}
+footer address, footer .social-media {
+  padding-top: 1em;
+}
+footer h6 {
+  color: #dedede;
+  text-transform: uppercase;
+}
+footer ul {
+  list-style: square;
+  padding: 0 1.2em;
+}
+
+@media (max-width: 768px) {
+  #members .members-background {
+    background: url("../img/young-pharmacist-on-white-background.png") right center no-repeat;
+    padding: 2em 0;
+  }
+  #members .check-list {
+    width: 20em;
+  }
+
+  footer .social-media-links {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 576px) {
+  #form-area h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  #mainNav .navbar-brand img {
+    width: 4em;
+  }
+
+  .banner .title {
+    width: 18em;
+    left: 1em;
+    top: 40%;
+  }
+
+  #news .card {
+    margin: 1em;
+  }
+
+  #members .members-background {
+    background: #ececec;
+    padding: 3.5em 0;
+  }
+  #members .check-list {
+    width: 20em;
+    margin-left: 1em;
+  }
+  #members .btn {
+    margin: 1em auto;
+  }
+
+  footer address ul {
+    width: 10em;
+  }
+}
+#form-area {
+  margin-top: 6em;
+  padding: 3em 1em;
+}
+
+form {
+  margin: 2rem 0;
+}
+form .form-content-justify {
+  display: flex;
+  justify-content: space-between;
+}
+form h1 {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333843;
+}
+form label {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: bold;
+}
+form span {
+  font-size: 14px;
+  font-style: italic;
+  color: #dd0000;
+}
+form #rg, form #cpf {
+  width: 18rem;
+}
+form #cidade {
+  width: 80%;
+}
+form #uf {
+  width: 4rem;
+}
+form #cep {
+  width: 8rem;
+}
+form input[type=text], form input[type=email] {
+  width: 100%;
+}
+form input[type=date] {
+  width: 10rem;
+}
+form input[type=tel] {
+  width: 18em;
+}
+form input[type=date],
+form input[type=text],
+form input[type=email],
+form input[type=tel] {
+  height: 30px;
+  padding: 10px;
+  color: #0c0c0c;
+  background: #ffffff;
+}
+form input[type=submit] {
+  width: 14em;
+  height: 3em;
+  margin: 6px;
+  color: #076483;
+  border-radius: 0;
+  border-color: #076483;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+form input[type=submit]:hover {
+  background: #076483;
+  color: #eee;
+}
+
+/*# sourceMappingURL=sbod-theme.css.map */
