@@ -6,7 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-   <title>Início - SBO Digital</title>
+   <title>SBO Digital</title>
 
    <link rel="stylesheet" media="screen" href="css/sbod-theme.css">
 
@@ -19,6 +19,10 @@
 
    <!-- Font Awesome -->
    <script src="https://kit.fontawesome.com/af40653a1b.js" crossorigin="anonymous"></script>
+
+   <!-- Particleground -->
+   <script src="js/particleground.js"></script>
+   <script src="js/jquery.particleground.min.js"></script>
 </head>
 
 <body>

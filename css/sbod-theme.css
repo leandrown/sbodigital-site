@@ -43,7 +43,7 @@ header nav .shift ul li a:hover:after {
   position: relative;
 }
 .banner .title {
-  top: 50%;
+  top: -32%;
   left: 10%;
   width: 34em;
   color: #ffffff;
@@ -286,8 +286,8 @@ footer ul {
 
   .banner .title {
     width: 18em;
-    left: 1em;
-    top: 40%;
+    left: 2em;
+    top: -32%;
   }
 
   #news .card {
