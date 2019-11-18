@@ -365,6 +365,7 @@ form input[type=tel] {
   padding: 10px;
   color: #0c0c0c;
   background: #ffffff;
+  border: solid 1px #BBBBBB;
 }
 form input[type=submit] {
   width: 14em;
@@ -382,5 +383,3 @@ form input[type=submit]:hover {
   background: #076483;
   color: #eee;
 }
-
-/*# sourceMappingURL=sbod-theme.css.map */
