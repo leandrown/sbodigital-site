@@ -203,11 +203,6 @@ h6 {
 #members .btn:hover {
   color: #ffffff;
 }
-
-#about {
-   margin-top: 7em;
-}
-
 #services {
   padding: 4rem 0;
 }
@@ -263,6 +258,35 @@ footer h6 {
 footer ul {
   list-style: square;
   padding: 0 1.2em;
+}
+
+/* Pagina Sobre a SBODigital */
+#about {
+   margin-top: 8em;
+}
+#about h1 {
+   margin-bottom: 0.8em;
+   color: #008388;
+}
+#about p {
+   text-align: justify;
+}
+#about p:last-child {
+   margin-bottom: 4em;
+}
+#about ol {
+   list-style: none;
+}
+#about ol li {
+   counter-increment: my-counter;
+   text-align: justify;
+}
+#about ol li::before {
+   content: counter(my-counter, lower-alpha) ")";
+   display: inline-block;
+   position: relative;
+   left: -1.8em;
+   width: 0;
 }
 
 @media (max-width: 768px) {
