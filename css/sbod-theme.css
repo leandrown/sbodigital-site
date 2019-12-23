@@ -260,7 +260,7 @@ footer ul {
   padding: 0 1.2em;
 }
 
-/* Pagina Sobre a SBODigital */
+/* Pagina 'Sobre a SBODigital' */
 #about {
    margin-top: 8em;
 }
@@ -289,6 +289,82 @@ footer ul {
    width: 0;
 }
 
+/* FORMULARIO */
+#form-area {
+   margin-top: 6em;
+   padding: 3em 1em;
+ }
+
+ form {
+   margin: 2rem 0;
+ }
+ form .form-content-justify {
+   display: flex;
+   justify-content: space-between;
+ }
+ form h1 {
+   font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+   color: #333843;
+ }
+ form label {
+   font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+   font-size: 16px;
+   font-weight: bold;
+ }
+ form span {
+   font-size: 14px;
+   font-style: italic;
+   color: #dd0000;
+ }
+ form #rg, form #cpf {
+   width: 18rem;
+ }
+ form #cidade {
+   width: 80%;
+ }
+ form #uf {
+   width: 4rem;
+ }
+ form #cep {
+   width: 8rem;
+ }
+ form input[type=text], form input[type=email] {
+   width: 100%;
+ }
+ form input[type=date] {
+   width: 10rem;
+ }
+ form input[type=tel] {
+   width: 18em;
+ }
+ form input[type=date],
+ form input[type=text],
+ form input[type=email],
+ form input[type=tel] {
+   height: 30px;
+   padding: 10px;
+   color: #0c0c0c;
+   background: #ffffff;
+   border: solid 1px #BBBBBB;
+ }
+ form input[type=submit] {
+   width: 14em;
+   height: 3em;
+   margin: 6px;
+   color: #076483;
+   border-radius: 0;
+   border-color: #076483;
+   background: #ffffff;
+   font-size: 14px;
+   font-weight: 600;
+   text-transform: uppercase;
+ }
+ form input[type=submit]:hover {
+   background: #076483;
+   color: #eee;
+ }
+
+/* RESPONSIVO - MOBILE */
 @media (max-width: 768px) {
   #members .members-background {
     background: url("../img/young-pharmacist-on-white-background.png") right center no-repeat;
@@ -337,77 +413,4 @@ footer ul {
   footer address ul {
     width: 10em;
   }
-}
-#form-area {
-  margin-top: 6em;
-  padding: 3em 1em;
-}
-
-form {
-  margin: 2rem 0;
-}
-form .form-content-justify {
-  display: flex;
-  justify-content: space-between;
-}
-form h1 {
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #333843;
-}
-form label {
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  font-weight: bold;
-}
-form span {
-  font-size: 14px;
-  font-style: italic;
-  color: #dd0000;
-}
-form #rg, form #cpf {
-  width: 18rem;
-}
-form #cidade {
-  width: 80%;
-}
-form #uf {
-  width: 4rem;
-}
-form #cep {
-  width: 8rem;
-}
-form input[type=text], form input[type=email] {
-  width: 100%;
-}
-form input[type=date] {
-  width: 10rem;
-}
-form input[type=tel] {
-  width: 18em;
-}
-form input[type=date],
-form input[type=text],
-form input[type=email],
-form input[type=tel] {
-  height: 30px;
-  padding: 10px;
-  color: #0c0c0c;
-  background: #ffffff;
-  border: solid 1px #BBBBBB;
-}
-form input[type=submit] {
-  width: 14em;
-  height: 3em;
-  margin: 6px;
-  color: #076483;
-  border-radius: 0;
-  border-color: #076483;
-  background: #ffffff;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-form input[type=submit]:hover {
-  background: #076483;
-  color: #eee;
 }
