@@ -57,34 +57,51 @@
       </nav> <!-- End Navigation -->
    </header>
 
-   <section id="contact">
+   <section id="login">
       <div class="container">
          <div class="row justify-content-center">
-            <div class="col-sm-8">
-               <form action="#" method="post" id="form-area">
-                  <div class="form-row justify-content-center">
-                     <h1>Entre em Contato</h1>
-                     <div class="form-group col-sm-8">
-                        <label for="nome">Nome</label>
-                        <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome completo">
-                     </div>
-                     <div class="form-group col-sm-8">
-                        <label for="email">E-mail</label>
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Seu e-mail">
-                     </div>
-                     <div class="form-group col-sm-8">
-                        <label for="assunto">Assunto</label>
-                        <input type="text" class="form-control" name="assunto" id="assunto" placeholder="Assunto">
-                     </div>
-                     <div class="form-group col-sm-8">
-                        <label for="msg">Mensagem</label>
-                        <textarea class="form-control" name="msg" id="msg" cols="80" rows="8" placeholder="Sua mensagem"></textarea>
-                     </div>
-                     <div class="form-group col-sm-8">
-                        <input type="submit" value="Enviar">
-                     </div>
-                  </div>
-               </form>
+            <div class="col-sm-6 ">
+               <!-- ============================ COMPONENT REGISTER ================================= -->
+               <div class="card">
+                  <article class="card-body">
+                     <header class="mb-4">
+                        <h4 class="card-title">Sign up</h4>
+                     </header>
+                     <form>
+                        <div class="form-row">
+                           <div class="col form-group">
+                              <label>First name</label>
+                              <input type="text" class="form-control" placeholder="">
+                           </div> <!-- form-group end.// -->
+                           <div class="col form-group">
+                              <label>Last name</label>
+                              <input type="text" class="form-control" placeholder="">
+                           </div> <!-- form-group end.// -->
+                        </div> <!-- form-row end.// -->
+                        <div class="form-group">
+                           <label>Email</label>
+                           <input type="email" class="form-control" placeholder="">
+                           <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div> <!-- form-group end.// -->
+                        <div class="form-row">
+                           <div class="form-group col-md-6">
+                              <label>Create password</label>
+                              <input class="form-control" type="password">
+                           </div> <!-- form-group end.// -->
+                           <div class="form-group col-md-6">
+                              <label>Repeat password</label>
+                              <input class="form-control" type="password">
+                           </div> <!-- form-group end.// -->
+                        </div>
+                        <div class="form-group">
+                           <button type="submit" class="btn btn-primary btn-block"> Register </button>
+                        </div> <!-- form-group// -->
+                     </form>
+                     <hr>
+                     <p class="text-center">Have an account? <a href="">Log In</a></p>
+                  </article> <!-- card-body end .// -->
+               </div> <!-- card.// -->
+               <!-- ============================ COMPONENT REGISTER END .// ================================= -->
             </div>
          </div>
       </div>
