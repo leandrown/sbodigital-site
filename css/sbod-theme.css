@@ -260,9 +260,12 @@ footer ul {
   padding: 0 1.2em;
 }
 
+/* Pagina de Login */
 #login {
-   margin-top: 8em;
+   margin-top: 10em;
+   margin-bottom: 6em;
 }
+
 /* Pagina 'Sobre a SBODigital' */
 #about {
    margin-top: 8em;
@@ -292,9 +295,18 @@ footer ul {
    width: 0;
 }
 
+/* Pagina Contato */
+.banner-contato {
+   background: url('../img/contact.jpg') center center no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 200px;
+   margin-top: 6em;
+   margin-bottom: 1rem;
+}
+
 /* FORMULARIO */
 #form-area {
-   margin-top: 6em;
    padding: 3em 1em;
  }
 
