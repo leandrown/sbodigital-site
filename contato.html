@@ -8,11 +8,10 @@
 
    <title>SBO Digital</title>
 
-   <link rel="stylesheet" media="screen" href="../css/sbod-theme.css">
-   <link rel="stylesheet" media="screen" href="../css/padrao.css">
+   <link rel="stylesheet" media="screen" href="css/sbod-theme.css">
 
    <!-- Bootstrap 4 -->
-   <link rel="stylesheet" media="screen" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
 
    <!-- Font Awesome -->
    <script src="https://kit.fontawesome.com/af40653a1b.js" crossorigin="anonymous"></script>
@@ -26,7 +25,7 @@
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
          <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-               <img src="../svg/sbod-main-logo.svg" alt="SBO Digital">
+               <img src="svg/sbod-main-logo.svg" alt="SBO Digital">
             </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
                aria-expanded="false" aria-label="Toggle navigation">
@@ -58,79 +57,51 @@
       </nav> <!-- End Navigation -->
    </header>
 
-   <section id="login">
+   <section id="contact">
       <div class="container">
          <div class="row justify-content-center">
-            <div class="col-sm-4">
-               <!-- LOGIN -->
-               <div class="card">
-                  <article class="card-body">
-                     <header class="mb-4">
-                        <h4 class="card-title">Sou Cadastrado</h4>
-                     </header>
-                     <form>
-                        <div class="form-row">
-                           <div class="form-group col-sm-12">
-                              <label for="email">E-mail ou CPF</label>
-                              <input type="text" name="email" id="email" class="form-control" placeholder="">
-                           </div>
-                        </div>
-                        <div class="form-row">
-                           <div class="form-group col-sm-12">
-                              <label for="senha">Senha</label>
-                              <input type="password" name="senha" id="senha" class="form-control">
-                              <small class="form-text text-muted"><a href="#">Esqueci minha senha</a></small>
-                           </div>
-                        </div>
-                        <div class="form-row justify-content-center">
-                           <div class="form-group col-sm-8">
-                              <input type="submit" value="Entrar">
-                           </div>
-                        </div>
-                     </form>
-                  </article>
-               </div>
-               <!-- LOGIN END -->
+            <div class="col col-sm-8">
+               <div class="banner-contato"></div>
             </div>
-            <div class="col-sm-4">
-               <!-- REGISTER -->
-               <div class="card">
-                  <article class="card-body">
-                     <header class="mb-4">
-                        <h4 class="card-title">Quero me Cadastrar</h4>
-                     </header>
-                     <form>
-                        <div class="form-row">
-                           <div class="form-group col-sm-12">
-                              <label for="cpf">Digite seu CPF</label>
-                              <input type="text" name="cpf" id="cpf" class="form-control" placeholder="">
+         </div>
+         <div class="row justify-content-center">
+            <div class="col-sm-8">
+               <h1>Entre em Contato</h1>
+               <form action="#" method="post">
+                  <div class="form-row">
+                     <div class="col-sm-8">
+                        <div class="form-group">
+                           <label for="nome">Nome</label>
+                           <input type="text" class="form-control" name="nome" id="nome" placeholder="">
+                        </div>
+
+                        <div class="form-group">
+                           <label for="email">E-mail</label>
+                           <input type="email" class="form-control" name="email" id="email" placeholder="">
+                        </div>
+                        <div class="form-group">
+                           <label for="assunto">Assunto</label>
+                           <input type="text" class="form-control" name="assunto" id="assunto" placeholder="">
+                        </div>
+                        <div class="form-group">
+                           <label for="msg">Mensagem</label>
+                           <textarea class="form-control" name="msg" id="msg" cols="80" rows="8" placeholder=""></textarea>
+                        </div>
+                        <div class="form-group">
+                           <input type="submit" value="Enviar">
+                        </div>
+                     </div>
+                     <div class="col-sm-4">
+                        <div class="">
+                           <div class="card-body">
+                              <h4>SBO Digital</h4>
+                              <p><i class="fas fa-phone-alt"></i> (11) 99999-9999</p>
+                              <p><a href="mailto:contato@sbodigital.org.br">contato@sbodigital.org.br</a></p>
                            </div>
                         </div>
-                        <div class="form-row">
-                           <div class="form-group col-sm-12">
-                              <label for="email2">Email</label>
-                              <input type="email" name="email2" id="email2" class="form-control" placeholder="">
-                           </div>
-                        </div>
-                        <div class="form-row">
-                           <div class="form-group col-sm-6">
-                              <label for="p1">Criar senha</label>
-                              <input type="password" name="p1" id="p1" class="form-control">
-                           </div>
-                           <div class="form-group col-sm-6">
-                              <label for="p2">Repetir senha</label>
-                              <input type="password" name="p2" id="p2" class="form-control">
-                           </div>
-                        </div>
-                        <div class="form-row justify-content-center">
-                           <div class="form-group col-md-8">
-                              <input type="submit" value="Cadastrar">
-                           </div>
-                        </div>
-                     </form>
-                  </article>
-               </div>
-               <!-- REGISTER END -->
+                     </div>
+                  </div>
+               </form>
             </div>
          </div>
       </div>
@@ -143,7 +114,7 @@
       <div class="container">
          <div class="row">
             <div class="col">
-               <a href="/"><img src="../svg/sbod-footer-logo.svg" alt="SBO Digital"></a>
+               <a href="/"><img src="svg/sbod-footer-logo.svg" alt="SBO Digital"></a>
             </div>
             <address class="col">
                <h6>Lorem ipsum dolor sit.</h6>
@@ -176,7 +147,7 @@
 
    <!-- jQuery and Bootstrap 4 -->
    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-   <script src="../js/bootstrap.bundle.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
