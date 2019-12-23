@@ -232,7 +232,7 @@ hr.divider {
 footer {
   padding: 3em 5em;
   width: 100%;
-  min-height: 300px;
+  min-height: 80px;
   color: #dedede;
   background: #333843;
 }
