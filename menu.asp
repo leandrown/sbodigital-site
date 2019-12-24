@@ -1,7 +1,7 @@
 <!-- Including Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <a class="navbar-brand js-scroll-trigger" href="index.asp">
          <img src="svg/sbod-main-logo.svg" alt="SBO Digital">
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
@@ -11,22 +11,22 @@
       <nav class="collapse navbar-collapse shift" id="navbarResponsive">
          <ul class="navbar-nav ml-auto my-2 my-lg-0">
             <li class="nav-item">
-               <a class="nav-link js-scroll-trigger" href="/">Home</a>
+               <a class="nav-link js-scroll-trigger" href="index.asp">Home</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link js-scroll-trigger" href="#">Quem Somos</a>
+               <a class="nav-link js-scroll-trigger" href="estatuto.asp">Estatuto Social</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link js-scroll-trigger" href="#">Notícias</a>
+               <a class="nav-link js-scroll-trigger" href="sobre.html">Sobre</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link js-scroll-trigger" href="membros.html">Membros</a>
+               <a class="nav-link js-scroll-trigger" href="associacao.asp">Novos associados</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link js-scroll-trigger" href="#">Contato</a>
+               <a class="nav-link js-scroll-trigger" href="contato.html">Contato</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link js-scroll-trigger" href="#"><i class="fas fa-user"></i> Entrar</a>
+               <a class="nav-link js-scroll-trigger" href="login.asp"><i class="fas fa-user"></i> Entrar</a>
             </li>
          </ul>
       </nav>

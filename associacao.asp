@@ -1,7 +1,10 @@
+<!--#include file="func.asp"-->
+<% if session("cod") <> "" or not isnull(session("cod")) then response.redirect("recadastro.asp") %>
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
+<link href="sbod.ico" rel="icon" type="image/x-icon" />	
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,6 +15,7 @@
    <link rel="stylesheet" media="screen" href="css/sbod-theme.css">
    <!-- Bootstrap -->
    <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+	<script src="js/validator.min.js"></script>   
    <!-- Font Awesome -->
    <script src="https://kit.fontawesome.com/af40653a1b.js" crossorigin="anonymous"></script>
 </head>
@@ -34,7 +38,7 @@
           		Ficha de Associação Individual
           </h1></div>
  	</div>
-<form name="cadastros" id="cadastro" method="post" action="update" onSubmit="return validar();">
+<form name="cadastros" id="cadastro" method="post" action="socio_insere.asp" data-toggle="validator" >
 	<p>
 		
 			Preencha os campos abaixo. Procure n&atilde;o deixar campos em branco.
@@ -52,14 +56,14 @@
   <div class="form-row">
     <div class="form-group col-md-12">
       <label for="inputNome">Nome completo *</label>
-      <input type="text" class="form-control" id="nome" placeholder="" required>
+      <input type="text" class="form-control" id="nome" name="nome" placeholder="" required>
     </div>
 
 	
 	
 	<div class="form-group col-md-12">
       <label for="inputEmail">Email *</label>
-      <input type="email" class="form-control" id="email" placeholder="Apenas um Email" required>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Apenas um Email" required>
     </div>
 	
 </div>
@@ -70,17 +74,17 @@
 	
 	<div class="form-group col-md-4">
       <label for="inputRG">RG</label>
-      <input type="text" class="form-control" id="rg" placeholder="">
+      <input type="text" class="form-control" id="rg" name="rg" placeholder="">
     </div>
   	
 	<div class="form-group col-md-4">
       <label for="inputCPF">CPF *</label>
-      <input type="text" class="form-control" id="CPF" placeholder="Somente números" required>
+      <input type="text" class="form-control" id="CPF" name="cpf" placeholder="Somente números" required>
     </div>
 	
 	<div class="form-group col-md-4">
       <label for="inputCRO">CRO</label>
-      <input type="text" class="form-control" id="CRO" placeholder="">
+      <input type="text" class="form-control" id="CRO" name="CRO" placeholder="">
     </div>
   	
 </div>
@@ -89,7 +93,7 @@
   	
 	<div class="form-group col-md-4">
       <label for="inputsexo">Sexo *</label>
-      <select id="sexo" class="form-control">
+      <select id="sexo" name="sexo" class="form-control">
         <option selected>Selecione</option>
         <option value="M">Masculino</option>
         <option value="F">Feminino</option>
@@ -98,7 +102,7 @@
   	
 	<div class="form-group col-md-6">
       <label for="inputNasc">Data de Nascimento *</label>
-      <input type="date" class="form-control" id="data_nasc" placeholder="dd/mm/aaaa" size="10" maxlength="25" required>
+      <input type="date" class="form-control" id="data_nasc" name="data_nasc" placeholder="dd/mm/aaaa" size="10" maxlength="25" required>
     </div>	
 	
 </div>
@@ -108,12 +112,12 @@
 	
 	<div class="form-group col-md-4">
       <label for="inputNasc">Nacionalidade</label>
-      <input type="text" class="form-control" id="nacionalidade" placeholder="">
+      <input type="text" class="form-control" id="nacionalidade" name="nacionalidade" placeholder="">
     </div>
 	
 	<div class="form-group col-md-4">
       <label for="inputCivil">Estado Civil</label>
-      <select id="estado_civil" class="form-control">
+      <select id="estado_civil" name="estado_civil" class="form-control">
 		<option selected>Selecione</option>
 		<option value="Solteiro">Solteiro</option>
 		<option value="Casado">Casado</option>
@@ -130,12 +134,12 @@
   	
 	<div class="form-group col-md-4">
       <label for="inputTel">Telefone</label>
-      <input type="tel" class="form-control" id="telefone" placeholder="(dd) 0000-0000">
+      <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(dd) 0000-0000">
 	</div>
   	
 	<div class="form-group col-md-4">
       <label for="inputCel">Celular *</label>
-	  <input type="tel" class="form-control" id="celular" placeholder="(dd) 00000-0000" required>
+	  <input type="tel" class="form-control" id="celular" name="celular" placeholder="(dd) 00000-0000" required>
     </div>
 	
 </div>
@@ -144,8 +148,10 @@
   	
 	<div class="form-group col-md-6">
       <label for="inputTel">Digite uma senha *</label>
-      <input id="senha" type="password" name="senha" size="20" maxlength="15" class="form-control" required>
+      <input id="inputPassword" type="password" name="senha" size="20" maxlength="15" class="form-control" data-minlength="6" required>
+	  <span class="help-block">Mínimo de seis (6) digitos</span>
 	</div>
+
 	  	
 </div>
 
@@ -159,34 +165,48 @@
 
 	<div class="form-group col-md-4">
       <label for="inputCEP">CEP *</label>
-      <input type="text" class="form-control" id="cep" placeholder="" required>
+      <input type="text" class="form-control" id="cep" name="cep" placeholder="" required>
     </div>
 
 	<div class="form-group col-md-12">
       <label for="inputEnD">Endereço Completo *</label>
-      <input type="text" class="form-control" id="endereco" placeholder="Rua, Nº, Complemento" required>
+      <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Rua, Nº, Complemento" required>
     </div>
 
 	<div class="form-group col-md-6">
       <label for="inputBairro">Bairro *</label>
-      <input type="text" class="form-control" id="bairro" placeholder="" required>
+      <input type="text" class="form-control" id="bairro" name="bairro" placeholder="" required>
     </div>
 	
 	<div class="form-group col-md-6">
       <label for="inputCidade">Cidade *</label>
-      <input type="text" class="form-control" id="cidade" placeholder="" required>
+      <input type="text" class="form-control" id="cidade" name="cidade" placeholder="" required>
     </div>	
 
 
 	<div class="form-group col-md-6">
       <label for="inputUF">Estado *</label>
-      <select id="estado" name="uf" class="qt form-control" required>
-				<option value=''selected>--</option><option value='AC'>AC</option><option value='AL'>AL</option><option value='AM'>AM</option><option value='AP'>AP</option><option value='BA'>BA</option><option value='CE'>CE</option><option value='DF'>DF</option><option value='ES'>ES</option><option value='GO'>GO</option><option value='MA'>MA</option><option value='MG'>MG</option><option value='MS'>MS</option><option value='MT'>MT</option><option value='PA'>PA</option><option value='PB'>PB</option><option value='PE'>PE</option><option value='PI'>PI</option><option value='PR'>PR</option><option value='RJ'>RJ</option><option value='RN'>RN</option><option value='RO'>RO</option><option value='RR'>RR</option><option value='RS'>RS</option><option value='SC'>SC</option><option value='SE'>SE</option><option value='SP'>SP</option><option value='TO'>TO</option>
+      <select id="estado" name="uf" name="uf" class="qt form-control" required>
+				<option value=''selected>--</option>
+		  <% Set rsUF = Server.CreateObject("ADODB.Recordset")
+			 rsUF.Open "SELECT uf FROM UF order by uf", Bco
+
+			if not rsUF.eof then 
+			 while not rsUF.eof
+			 %>
+		  		<option value='<%=rsUF("uf")%>'><%=rsUF("uf")%></option>
+			<% 
+			   rsUF.movenext
+			   wend
+			   
+			   end if
+			   rsUF.close
+			%>		  
 			  </select>
     </div>
 	<div class="form-group col-md-6">
       <label for="inputPais">País</label>
-      <input type="text" class="form-control" id="pais" placeholder="">
+      <input type="text" class="form-control" id="pais" name="pais" placeholder="">
     </div>
 
 </div>
@@ -197,52 +217,48 @@
   <div class="form-row">
     <div class="form-group col-md-12">
       <label for="inputInst">Instituição *</label>
-      <input type="text" class="form-control" id="instituicao" placeholder="" required>
+      <input type="text" class="form-control" id="instituicao" name="instituicao" placeholder="" required>
     </div>
 
     <div class="form-group col-md-12">
       <label for="inputDepto">Departamento</label>
-      <input type="text" class="form-control" id="depto" placeholder="">
+      <input type="text" class="form-control" id="depto" name="depto" placeholder="">
     </div>
 
     <div class="form-group col-md-12">
       <label for="inputDisc">Disciplina</label>
-      <input type="text" class="form-control" id="disciplina" placeholder="">
+      <input type="text" class="form-control" id="disciplina" name="disciplina" placeholder="">
     </div>
 
     <div class="form-group col-md-12">
       <label for="inputTelDepto">Telefone do Departamento</label>
-      <input type="text" class="form-control" id="tel_depto" placeholder="">
+      <input type="text" class="form-control" id="tel_depto" name="tel_depto" placeholder="">
     </div>
 
 </div>
 	
 
-
+<br><label class="form-valor-label"><img src="img/checkbox_checked.png" class="img-fluid" alt=""/> Valor Anuidade: R$ 400,00</label>
   <div class="form-group">
     <div class="form-check">
-		<br><br><br><input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+		
+		
+		<br><input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
       <label class="form-check-label" for="invalidCheck">
-        Declaro que li e estou de acordo com o Estatuto da Sociedade
-      </label>
+        Declaro que li e estou de acordo com o <a href="estatuto.asp" target="_blank">Estatuto da Sociedade</a> </label>
       <div class="invalid-feedback">
        Você precisa concordar com os termos antes de prosseguir.
       </div>
     </div>
   </div>
-			
-			
-			
+						
 	</div> 
-
-    
 
 <br>             
 <div class="col-md-12">
-               <div class="form-group text-center">
-                  <br><br><input type="submit" value="Enviar">
-               </div>
-
+   <div class="form-group text-center">
+	  <br><br><input type="submit" value="Enviar">
+   </div>
 </div>
 
      </div>
@@ -387,30 +403,6 @@
          <div class="row">
             <div class="col">
                <a href="/"><img src="svg/sbod-footer-logo.svg" alt="SBO Digital"></a>
-            </div>
-            <address class="col">
-               <h6>Lorem ipsum dolor sit.</h6>
-               <ul>
-                  <li>Lorem ipsum dolor sit.</li>
-                  <li>Lorem ipsum dolor sit.</li>
-                  <li>Lorem ipsum dolor sit.</li>
-               </ul>
-            </address>
-            <address class="col">
-               <h6>Lorem ipsum dolor sit.</h6>
-               <ul>
-                  <li>Lorem ipsum dolor sit.</li>
-                  <li>Lorem ipsum dolor sit.</li>
-                  <li>Lorem ipsum dolor sit.</li>
-               </ul>
-            </address>
-            <div class="col social-media">
-               <h6>Redes Sociais</h6>
-               <div class="social-media-links">
-                  <i class="fab fa-facebook-f"></i>
-                  <i class="fab fa-instagram"></i>
-                  <i class="fab fa-twitter"></i>
-               </div>
             </div>
          </div>
       </div>

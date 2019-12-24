@@ -72,7 +72,7 @@
             </div>
          </div>
          <div class="row">
-            <button type="button" class="btn btn-outline-info">Associe-se <i class="fas fa-arrow-right"></i></button>
+            <button type="button" class="btn btn-outline-info"><a href='associacao.asp'>Associe-se </a><i class="fas fa-arrow-right"></i></button>
          </div>
       </div>
    </div>

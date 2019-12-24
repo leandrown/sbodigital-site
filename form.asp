@@ -19,40 +19,7 @@
 
    <header>
       <!-- Navigation Bar -->
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-               <img src="svg/sbod-main-logo.svg" alt="SBO Digital">
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-               aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-               <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                  <li class="nav-item">
-                     <a class="nav-link js-scroll-trigger" href="/">Home</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link js-scroll-trigger" href="#">Quem Somos</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link js-scroll-trigger" href="#">Notícias</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link js-scroll-trigger" href="membros.html">Membros</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link js-scroll-trigger" href="#">Contato</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link js-scroll-trigger" href="#"><i class="fas fa-user"></i> Entrar</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </nav> <!-- end navigation -->
-   </header>
+     <!--#include file="menu.asp"-->
    
       <section id="form-area">
    
@@ -79,210 +46,183 @@
 <div class="row">
 	<div class="col-md-12 col-sm-12">
 
-		<h2>Dados Pessoais</h2><br>
+		<h3>Dados Pessoais</h3><br>
 
 				
   <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Password</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    <div class="form-group col-md-12">
+      <label for="inputNome">Nome completo</label>
+      <input type="text" class="form-control" id="nome" placeholder="" required>
     </div>
   </div>
-  <div class="form-group">
-    <label for="inputAddress">Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-  </div>
-  <div class="form-group">
-    <label for="inputAddress2">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">City</label>
-      <input type="text" class="form-control" id="inputCity">
+	
+	
+	<div class="form-row">
+  	
+	<div class="form-group col-md-8">
+      <label for="inputEmail">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Apenas um Email" required>
     </div>
-    <div class="form-group col-md-4">
-      <label for="inputState">State</label>
-      <select id="inputState" class="form-control">
-        <option selected>Choose...</option>
-        <option>...</option>
-      </select>
+	
+	<div class="form-group col-md-4">
+      <label for="inputNasc">Data de Nascimento</label>
+      <input type="date" class="form-control" id="data_nasc" placeholder="dd/mm/aaaa" required>
+    </div>	
+  	
+	<div class="form-group col-md-4">
+      <label for="inputRG">RG</label>
+      <input type="text" class="form-control" id="rg" placeholder="" required>
     </div>
-    <div class="form-group col-md-2">
-      <label for="inputZip">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
+  	
+	<div class="form-group col-md-4">
+      <label for="inputCPF">CPF</label>
+      <input type="text" class="form-control" id="CPF" placeholder="Somente números" required>
     </div>
-  </div>
-  
-			<div class="col-md-12">
-				<label><strong>Nome</strong></label><br>
-				<input id="nome" type="text" name="nome" size="50" value="" class="form-control" required>
-			 </div>	
+	
+	<div class="form-group col-md-4">
+      <label for="inputCRO">CRO</label>
+      <input type="text" class="form-control" id="CRO" placeholder="" required>
+    </div>
+  	
+  	
+	<div class="form-group col-md-4">
+      <label for="inputsexo">Sexo</label>
+      <select id="sexo" class="form-control">
+        <option selected>Selecione</option>
+        <option value="M">Masculino</option>
+        <option value="F">Feminino</option>
+	  </select>      
+    </div>
+  	
+	<div class="form-group col-md-4">
+      <label for="inputNasc">Nacionalidade</label>
+      <input type="text" class="form-control" id="nacionalidade" placeholder="">
+    </div>
+	
+	<div class="form-group col-md-4">
+      <label for="inputCivil">Estado Civil</label>
+      <select id="estado_civil" class="form-control">
+		<option selected>Selecione</option>
+		<option value="Solteiro">Solteiro</option>
+		<option value="Casado">Casado</option>
+		<option value="Separado">Separado</option>
+		<option value="Divorciado">Divorciado</option>					
+		<option value="Viúvo">Viúvo</option>
+	  </select>      
+    </div>
+  	
+  	
+	<div class="form-group col-md-4">
+      <label for="inputTel">Telefone</label>
+      <input type="tel" class="form-control" id="telefone" placeholder="(dd) 0000-0000">
+	</div>
+  	
+	<div class="form-group col-md-4">
+      <label for="inputCel">Celular</label>
+	  <input type="tel" class="form-control" id="celular" placeholder="(dd) 00000-0000" required>
+    </div>
+  	
+	<div class="form-group col-md-4">
+      <label for="inputTel">Digite uma senha</label>
+      <input id="senha" type="password" name="senha" size="50" maxlength="6" class="form-control" required>
+	</div>
+  	
+	<div class="form-group col-md-4">
+      <label for="inputCel">Confirme a senha</label>
+	  <input id="senha2" type="password" name="senha2" size="50" maxlength="6" class="form-control" >&nbsp;<span id="ok"></span>
+    </div>
+	  	
+</div>
 
 
-		    <div class="col-md-12">
-					<label><strong>Email</strong></label> <br>
-					<input id="email" type="email" name="email" size="50" value="" class="form-control" required>
-			</div>
 
 
-			<div class="col-md-3">
-				<label><strong>RG</strong></label><br>
-			    <input id="rg" type="text" name="rg" size="50" value="" maxlength="12"  class="form-control"> 
-			</div>
+<h2>Endereço Completo</h2><br>
 
-			<div class="col-md-3">
-				<label><strong>CPF</strong></label><br>
-				<input id="cpf" type="text" name="cpf" class="cpf form-control" size="50" value="" required  >	
-			</div>
-
-			<div class="col-md-3">
-				<label><strong>CRO</strong></label>
-				<br>
-				<input type="text" name="cro" size="50" value="" class="form-control">	
-			</div>
-			
-			<div class="col-md-3">
-				<label><strong>Estado Civil</strong></label>
-				<select  class="form-control input-box" name="estado_civil" id="estado_civil">
-              		<option value="">-</option>
-					<option value="Solteiro">Solteiro</option>
-              		<option value="Casado">Casado</option>
-					<option value="Separado">Separado</option>
-              		<option value="Divorciado">Divorciado</option>					
-					<option value="Viúvo">Viúvo</option>
-				</select>
-			</div>			
-
-
-			<div class="col-md-4">
-				<label><strong>Data de Nasc.</strong></label><br>
-				<input id="data_nasc" type="text" class="date form-control" name="data_nasc" size="50" value="" maxlength="12"  required>
-			</div>
-
-
-			<div class="col-md-4">
-				<label><strong>Sexo</strong></label><br>
-				<select  class="form-control input-box" name="sexo" id="sexo" required>
-              		<option value="M">Masculino</option>
-              		<option value="F">Feminino</option>
-            	</select>					
-			</div>
-
-
-			<div class="col-md-4">
-				<label><strong>Nacionalidade</strong></label>
-				<br>
-				<input id="naturalidade" type="text" name="natur" size="50" value="" class="form-control" required>
-			</div>
-
-			
-			<div class="col-md-4">
-				<label><strong>Telefone</strong></label><br>
-			  	<input id="fone1" type="text" class="td phone_with_ddd form-control" name="fone1"  size="18" value="">
-			</div>
-
-			<div class="col-md-4">				
-			  <label><strong>Celular</strong></label><br>
-			  <input id="celular" name="celular" type="text" class="td cel form-control"  value="" size="18">
-			</div>
-
-			<div class="col-md-12">
 				
-				<div class="row">
-					<div class="col-md-6">
-						<label><strong>Digite uma Senha</strong></label>
-						<input id="senha" type="password" name="senha" size="50" maxlength="6" class="form-control" required>
-					</div>
-					<div class="col-md-6">
-						<label><strong>Confirme sua senha </strong></label>
-						<input id="senha2" type="password" name="senha2" size="50" maxlength="6" class="form-control" >&nbsp;<span id="ok"></span>
-					</div>
-				</div>
-				
-			</div>
-	</div> 
+<div class="form-row">
+
+	<div class="form-group col-md-4">
+      <label for="inputCEP">CEP</label>
+      <input type="text" class="form-control" id="cep" placeholder="" required>
+    </div>
+
+	<div class="form-group col-md-12">
+      <label for="inputEnD">Endereço Completo</label>
+      <input type="text" class="form-control" id="endereco" placeholder="Rua, Nº, Complemento" required>
+    </div>
+
+	<div class="form-group col-md-6">
+      <label for="inputBairro">Bairro</label>
+      <input type="text" class="form-control" id="bairro" placeholder="" required>
+    </div>
+	
+	<div class="form-group col-md-6">
+      <label for="inputBairro">Bairro</label>
+      <input type="text" class="form-control" id="bairro" placeholder="" required>
+    </div>	
 
 
-
-	<div class="col-md-12">		
-	<h2>Endere&ccedil;o Completo</h2><br>
-
-			<div class="col-md-12">
-				<label><strong>Cep</strong></label><br>
-              	<input id="cep" type="text" class="td cep form-control" name="cep1"   size="50" value="" required >
-			</div>	
-			
-			<div class="col-md-12">
-				<label><strong>Endere&ccedil;o Completo: </strong></label><br>
-			  	<input id="rua" type="text" class="td form-control" name="endereco1" size="50" value="" required>
-			</div>
-
-			<div class="col-md-6">
-				<label><strong>Bairro</strong></label><br>
-			  <input type="text" id="bairro" class="td form-control" name="bairro1" size="50" value="" required>
-			</div>
-
-			<div class="col-md-6">
-				<label><strong>Cidade:</strong></label><br>
-			  	<input id="cidade" type="text" class="td form-control" name="cidade1" size="50" value="" required>
-			</div>
-
-			<div class="col-md-2">
-			  <label><strong>Estado:</strong></label><br>
-			  <select id="estado" name="uf1" class="qt form-control" required>
+	<div class="form-group col-md-6">
+      <label for="inputUF">Estado</label>
+      <select id="estado" name="uf" class="qt form-control" required>
 				<option value=''selected>--</option><option value='AC'>AC</option><option value='AL'>AL</option><option value='AM'>AM</option><option value='AP'>AP</option><option value='BA'>BA</option><option value='CE'>CE</option><option value='DF'>DF</option><option value='ES'>ES</option><option value='GO'>GO</option><option value='MA'>MA</option><option value='MG'>MG</option><option value='MS'>MS</option><option value='MT'>MT</option><option value='PA'>PA</option><option value='PB'>PB</option><option value='PE'>PE</option><option value='PI'>PI</option><option value='PR'>PR</option><option value='RJ'>RJ</option><option value='RN'>RN</option><option value='RO'>RO</option><option value='RR'>RR</option><option value='RS'>RS</option><option value='SC'>SC</option><option value='SE'>SE</option><option value='SP'>SP</option><option value='TO'>TO</option>
 			  </select>
-			</div>
+    </div>
+	<div class="form-group col-md-6">
+      <label for="inputPais">País</label>
+      <input type="text" class="form-control" id="pais" placeholder="" required>
+    </div>
 
-			<div class="col-md-6">
-				<label><strong>País</strong></label><br>
-			  	<input name="pais" type="text" class="td form-control" id="pais" value="" size="25" maxlength="50" >
-			</div>			
-
-		</div>
-
-
-	
 </div>
-        
 
-<div class="row">
-	<div class="col-md-12">
-	  <h2>Instituição </h2>
-	  <br>
+<h2>Instituição</h2><br>
+
+				
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="inputInst">Instituição</label>
+      <input type="text" class="form-control" id="instituicao" placeholder="" required>
+    </div>
+
+    <div class="form-group col-md-12">
+      <label for="inputDepto">Departamento</label>
+      <input type="text" class="form-control" id="depto" placeholder="" required>
+    </div>
+
+    <div class="form-group col-md-12">
+      <label for="inputDisc">Disciplina</label>
+      <input type="text" class="form-control" id="disciplina" placeholder="" required>
+    </div>
+
+    <div class="form-group col-md-12">
+      <label for="inputTelDepto">Telefone do Departamento</label>
+      <input type="text" class="form-control" id="tel_depto" placeholder="" required>
+    </div>
+
+</div>
+	
 
 
-	  <div class="col-md-12">
-				<label><strong>Instituição</strong></label>
-				<br>
-				<input id="instituicao" name="instituicao" type="text" value="" size="25" maxlength="50" class="form-control" required>
-		</div>
+  <div class="form-group">
+    <div class="form-check">
+		<br><br><br><input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Declaro que li e estou de acordo com o Estatuto da Sociedade
+      </label>
+      <div class="invalid-feedback">
+       Você precisa concordar com os termos antes de prosseguir.
+      </div>
+    </div>
+  </div>
+			
+			
+			
+	</div> 
 
-	  <div class="col-md-12">
-				<label><strong>Departamento</strong></label>
-				<br>
-				<input name="departamento" type="text" id="departamento" value="" size="5" maxlength="5" class="form-control">
-		</div>
+    
 
-	  <div class="col-md-12">
-			<label><strong>Disciplina</strong></label>
-			<br>
-			<input name="disciplina" type="text" id="disciplina" value="" size="25" maxlength="50" class="form-control">
-		</div>
-
-	  <div class="col-md-4">
-				<label><strong>Telefone do Departamento</strong></label>
-				<br>
-				<input name="telefone_depto" type="text" id="telefone_depto" value="" size="20" maxlength="20" class="td cel form-control">
-		</div>
-
-		
-		<br>             
+<br>             
 <div class="col-md-12">
                <div class="form-group text-center">
                   <br><br><input type="submit" value="Enviar">
