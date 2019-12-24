@@ -314,7 +314,7 @@ footer ul {
    margin-top: 2em;
 }
 #diretoria h2 {
-   margin-bottom: 2em;
+   margin-bottom: 1em;
 }
 #diretoria ul {
    list-style: none;
@@ -322,6 +322,25 @@ footer ul {
 }
 #diretoria .cargos {
    font-style: italic;
+}
+/* Pagina Diretoria - Tabelas */
+#diretoria table {
+   margin-bottom: 4rem;
+}
+#diretoria table thead,
+.table-center {
+   text-align: center;
+}
+#diretoria table thead tr:first-child th {
+   background-color: #5d5e5d;
+   color: #fff;
+}
+#diretoria table thead tr th {
+   background-color: #bdbfbe;
+}
+#diretoria table tbody tr th {
+   width: 30%;
+   background-color: #edefef;
 }
 
 /* Pagina Contato */
