@@ -9,7 +9,6 @@
          <ul>
             <li>Rua das Pitombeiras, 126 - Vila Parque Jabaquara - São Paulo / SP - CEP 04321-160</li>
          </ul>
-         <small>© 2019 Todos os direitos reservados da SBODigital</small>
       </address>
 
       <div class="col social-media">
@@ -18,6 +17,7 @@
             <a href="https://www.instagram.com/sbodigital" target="_blank"><i class="fab fa-instagram"></i></a>
          </div>
       </div>
+      <small>© 2019 Todos os direitos reservados da SBODigital</small>
    </div>
 </div>
 <!-- End Footer -->

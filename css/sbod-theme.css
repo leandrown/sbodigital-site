@@ -230,7 +230,7 @@ hr.divider {
 }
 
 footer {
-  padding: 3em 5em;
+  padding: 3em 5em 1em 5em;
   width: 100%;
   min-height: 80px;
   color: #dedede;
@@ -461,7 +461,14 @@ footer ul {
   }
 
   footer address ul {
-    width: 10em;
+    width: 100%;
+    text-align: center;
+  }
+  footer small {
+     padding: 10px 5px;
+  }
+  footer h6, footer small {
+     text-align: center;
   }
 
   .banner-login {
