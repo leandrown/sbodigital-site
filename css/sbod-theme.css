@@ -267,7 +267,7 @@ footer ul {
 }
 
 /* Pagina de Login */
-#login {
+.login {
    margin-top: 6em;
    margin-bottom: 2em;
 }
@@ -311,7 +311,7 @@ footer ul {
 
 /* Pagina Diretoria */
 #diretoria {
-   margin-top: 2em;
+   margin-top: 8em;
 }
 #diretoria h2 {
    margin-bottom: 1em;
