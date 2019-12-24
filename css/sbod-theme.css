@@ -303,6 +303,21 @@ footer ul {
    width: 0;
 }
 
+/* Pagina Diretoria */
+#diretoria {
+   margin-top: 2em;
+}
+#diretoria h2 {
+   margin-bottom: 2em;
+}
+#diretoria ul {
+   list-style: none;
+   padding-left: 8px;
+}
+#diretoria .cargos {
+   font-style: italic;
+}
+
 /* Pagina Contato */
 .banner-contato {
    background: url('../img/contact.jpg') center center no-repeat;
