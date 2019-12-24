@@ -315,6 +315,7 @@ footer ul {
 
 /* FORMULARIO */
 #form-area {
+   margin-top: 6em;
    padding: 3em 1em;
  }
 
@@ -400,6 +401,11 @@ footer ul {
   footer .social-media-links {
     font-size: 1.5em;
   }
+
+  .banner-login {
+   background-position: 0 -100px;
+   margin-bottom: 1em;
+}
 }
 @media (max-width: 576px) {
   #form-area h1 {
@@ -436,4 +442,18 @@ footer ul {
   footer address ul {
     width: 10em;
   }
+
+  .banner-login {
+      background-position: 0 -45px;
+      width: 100%;
+      height: 150px;
+      margin-bottom: 2em;
+   }
+   .card:first-child {
+      margin-bottom: 1em;
+   }
+
+   .banner-contato {
+      height: 150px;
+   }
 }
