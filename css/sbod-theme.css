@@ -242,6 +242,12 @@ footer .social-media {
 footer .social-media-links {
   font-size: 2em;
 }
+footer .social-media-links a,
+footer .social-media-links a:hover,
+footer .social-media-links a:visited {
+   color: #dedede;
+   text-decoration: none;
+}
 footer .social-media-links i {
   margin: 0.2em;
 }
@@ -256,8 +262,8 @@ footer h6 {
   text-transform: uppercase;
 }
 footer ul {
-  list-style: square;
-  padding: 0 1.2em;
+  list-style: none;
+  padding: 0;
 }
 
 /* Pagina de Login */
