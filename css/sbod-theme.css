@@ -116,26 +116,37 @@ h6 {
   font-size: 14px;
 }
 
-#news {
+#news { margin-bottom: 15px; padding: 10px; }
+
+#news h2 { margin-bottom: 20px; }
+
+#news article { padding: 20px 10px; }
+
+#news img {
+   width: 100%;
+   margin-top: 20px;
+}
+
+#know-more {
   margin: 2rem 0;
 }
-#news .row {
+#know-more .row {
   justify-content: space-evenly;
 }
-#news .col {
+#know-more .col {
   padding: 1em 75px 3em 75px;
 }
-#news .card {
+#know-more .card {
   width: 20rem;
   margin-bottom: 2rem;
   background: #008388;
 }
-#news .card .card-body {
+#know-more .card .card-body {
   padding: 1.5rem;
   background: #ffffff;
   color: #606060;
 }
-#news .card a, #news .card a:hover, #news .card a:visited {
+#know-more .card a, #know-more .card a:hover, #know-more .card a:visited {
   margin: 8px;
   padding: 6px 8px;
   color: #ffffff;
@@ -146,22 +157,22 @@ h6 {
   text-transform: uppercase;
   cursor: pointer;
 }
-#news .card a i, #news .card a:hover i, #news .card a:visited i {
+#know-more .card a i, #know-more .card a:hover i, #know-more .card a:visited i {
   margin-left: 1rem;
 }
-#news .card h6, #news .card span {
+#know-more .card h6, #know-more .card span {
   color: #00ada4;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
 }
-#news .card p {
+#know-more .card p {
   padding-top: 2rem;
   padding-bottom: 1rem;
   font-size: 14px;
   font-weight: 600;
 }
-#news .card-border {
+#know-more .card-border {
   border: 1px solid #076483;
   border-radius: 0;
   opacity: 1;
@@ -463,7 +474,7 @@ footer ul {
     top: -32%;
   }
 
-  #news .card {
+  #know-more .card {
     margin: 1em;
   }
 
