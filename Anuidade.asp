@@ -3,11 +3,12 @@
 <html lang="pt-br">
 
 <head>
+   <link href="sbod.ico" rel="icon" type="image/x-icon" />	
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-   <title>SBODigital - Admissão de Novo Sócio</title>
+   <title>SBODigital</title>
 	<link href="css/padrao.css?novo" rel="stylesheet" type="text/css">
 	
    <link rel="stylesheet" media="screen" href="css/sbod-theme.css">
@@ -89,13 +90,7 @@ name="submit" alt="Pague com PagSeguro - &eacute; r&aacute;pido, gr&aacute;tis e
    </section>
 
    <footer>
-      <div class="container">
-         <div class="row">
-            <div class="col">
-               <a href="/"><img src="svg/sbod-footer-logo.svg" alt="SBO Digital"></a>
-            </div>
-         </div>
-      </div>
+      <!--#include file="footer.asp"-->
    </footer>
 
    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>

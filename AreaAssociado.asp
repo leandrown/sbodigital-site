@@ -9,7 +9,7 @@ if session("cod") = "" or isnull(session("cod")) then
 end if
    
 Set rs = Server.CreateObject("ADODB.Recordset")
-rs.Open "SELECT * FROM socios where cod_socio = " & session("cod"), Bco
+rs.Open "SELECT nome,email,cod_socio,data,anuidade,sexo FROM socios where cod_socio = " & session("cod"), Bco
 
 if rs.eof then
    	session("erro") = "ne"
@@ -20,6 +20,11 @@ sexo = rs("sexo")
    sx = "o"
    if sexo = "F" then sx = "a"
    
+if rs("anuidade") = "" or isnull(rs("anuidade")) or rs("anuidade") = 0 then
+ 	anuidade = "<font color='#9A0101'>Pendente</font>"
+ else
+	anuidade = "<font color='#299A01'>Em dia</font>"
+ end if
 %>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -30,7 +35,7 @@ sexo = rs("sexo")
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-   <title>SBODigital - Admissão de Novo Sócio</title>
+   <title>SBODigital</title>
 	<link href="css/padrao.css?novo" rel="stylesheet" type="text/css">
 	
    <link rel="stylesheet" media="screen" href="css/sbod-theme.css">
@@ -76,23 +81,32 @@ de cadastro:     <br>
 	
 	
 	
-	<div class="form-group col-md-4">
+	<div class="form-group col-md-12">
       <label for="inputRG">Data de cadastro</label>
       <br>
       <strong><%=data_func(rs("data"))%></strong>
     </div>
   	  	
+	
+	<div class="form-group col-md-12">
+      <label for="inputRG">Anuidade <%=year(now)%></label>
+      <br>
+      <strong><%=anuidade%></strong>
+    </div>
+  	  	 
 </div>
 		
 <div class="form-row">
 	<form name="cadastros" id="cadastro" method="post" action="recadastro.asp">	
 		<input type="submit" value="Editar meus dados">
 	</form>	
+<% if rs("anuidade") = "" or isnull(rs("anuidade")) or rs("anuidade") = 0 then %>
 	
 	<form name="cadastros" id="cadastro" method="post" action="Anuidade2via.asp">	
 		<input type="submit" value="Pagamento Anuidade">
 	</form>	
-	
+<% end if %>
+ 
 </div>
 
 	
@@ -109,13 +123,7 @@ de cadastro:     <br>
    </section>
 
    <footer>
-      <div class="container">
-         <div class="row">
-            <div class="col">
-               <a href="/"><img src="svg/sbod-footer-logo.svg" alt="SBO Digital"></a>
-            </div>
-         </div>
-      </div>
+      <!--#include file="footer.asp"-->
    </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>

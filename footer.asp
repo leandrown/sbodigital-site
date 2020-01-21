@@ -14,7 +14,7 @@
       <div class="col social-media">
          <h6>Redes Sociais</h6>
          <div class="social-media-links">
-            <a href="https://www.instagram.com/sbodigital" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/sbodigital2019" target="_blank"><i class="fab fa-instagram"></i></a>
          </div>
       </div>
       <small>© 2019 Todos os direitos reservados da SBODigital</small>

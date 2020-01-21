@@ -1,5 +1,15 @@
 <!--#include file="func.asp"-->
-<% if session("cod") <> "" or not isnull(session("cod")) then response.redirect("recadastro.asp") %>
+<% 
+
+if session("cod") <> "" and not isnull(session("cod")) then response.redirect("recadastro.asp") 
+
+cpf = session("cpf")
+email = session("email")
+
+session("cpf") = ""
+session("email") = ""
+
+%>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,7 +19,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-   <title>SBODigital - Admissão de Novo Sócio</title>
+   <title>SBODigital</title>
 	<link href="css/padrao.css?novo" rel="stylesheet" type="text/css">
 	
    <link rel="stylesheet" media="screen" href="css/sbod-theme.css">
@@ -63,7 +73,7 @@
 	
 	<div class="form-group col-md-12">
       <label for="inputEmail">Email *</label>
-      <input type="email" class="form-control" id="email" name="email" placeholder="Apenas um Email" required>
+      <input type="email" class="form-control" id="email" name="email" value="<%=email%>" required>
     </div>
 	
 </div>
@@ -79,7 +89,7 @@
   	
 	<div class="form-group col-md-4">
       <label for="inputCPF">CPF *</label>
-      <input type="text" class="form-control" id="CPF" name="cpf" placeholder="Somente números" required>
+      <input type="text" class="form-control" id="CPF" name="cpf" value="<%=cpf%>" required>
     </div>
 	
 	<div class="form-group col-md-4">
@@ -147,7 +157,7 @@
 <div class="form-row">
   	
 	<div class="form-group col-md-6">
-      <label for="inputTel">Digite uma senha *</label>
+      <label for="inputSenha">Digite uma senha *</label>
       <input id="inputPassword" type="password" name="senha" size="20" maxlength="15" class="form-control" data-minlength="6" required>
 	  <span class="help-block">Mínimo de seis (6) digitos</span>
 	</div>
@@ -216,8 +226,8 @@
 				
   <div class="form-row">
     <div class="form-group col-md-12">
-      <label for="inputInst">Instituição *</label>
-      <input type="text" class="form-control" id="instituicao" name="instituicao" placeholder="" required>
+      <label for="inputInst">Instituição</label>
+      <input type="text" class="form-control" id="instituicao" name="instituicao" placeholder="">
     </div>
 
     <div class="form-group col-md-12">
@@ -399,13 +409,7 @@
    </section>
 
    <footer>
-      <div class="container">
-         <div class="row">
-            <div class="col">
-               <a href="/"><img src="svg/sbod-footer-logo.svg" alt="SBO Digital"></a>
-            </div>
-         </div>
-      </div>
+      <!--#include file="footer.asp"-->
    </footer>
 
    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>

@@ -7,7 +7,7 @@ email = PQ(request("email"))
 senha = PQ(request("senha"))
 
 Set user = Server.CreateObject("ADODB.Recordset")
-user.Open "SELECT * FROM socios where (email = '" & email & "' and senha = '" & senha & "') ", Bco
+user.Open "SELECT * FROM socios where (email = '" & email & "' or cpf = '" & email & "') and senha = '" & senha & "' ", Bco
 
 if user.eof then
    session("erro") = "fail"

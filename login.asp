@@ -8,7 +8,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-   <title>SBODigital - Admissão de Novo Sócio</title>
+   <title>SBODigital</title>
    <link href="css/padrao.css" rel="stylesheet" type="text/css">
 
    <link rel="stylesheet" media="screen" href="css/sbod-theme.css">

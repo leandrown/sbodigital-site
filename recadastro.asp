@@ -210,8 +210,8 @@ else
 				
   <div class="form-row">
     <div class="form-group col-md-12">
-      <label for="inputInst">Instituição *</label>
-      <input type="text" class="form-control" id="instituicao" name="instituicao" placeholder="" required value="<%=rs("instituicao")%>">
+      <label for="inputInst">Instituição</label>
+      <input type="text" class="form-control" id="instituicao" name="instituicao" placeholder="" value="<%=rs("instituicao")%>">
     </div>
 
     <div class="form-group col-md-12">
@@ -377,13 +377,7 @@ else
    </section>
 
    <footer>
-      <div class="container">
-         <div class="row">
-            <div class="col">
-               <a href="/"><img src="svg/sbod-footer-logo.svg" alt="SBO Digital"></a>
-            </div>
-         </div>
-      </div>
+      <!--#include file="footer.asp"-->
    </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>

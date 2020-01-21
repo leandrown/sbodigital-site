@@ -14,19 +14,28 @@
                <a class="nav-link js-scroll-trigger" href="index.asp">Home</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link js-scroll-trigger" href="estatuto.asp">Estatuto Social</a>
+               <a class="nav-link js-scroll-trigger" href="sobre.asp">Quem Somos</a>
+            </li>			 
+            <li class="nav-item">
+               <a class="nav-link js-scroll-trigger" href="estatuto.asp">Estatuto</a>
+            </li>
+			 <li class="nav-item">
+               <a class="nav-link js-scroll-trigger" href="diretoria.asp">Diretoria</a>
+            </li>
+			 <% if session("cod") = "" or isnull(session("cod")) then %>
+            <li class="nav-item">
+               <a class="nav-link js-scroll-trigger" href="login.asp">Novos associados</a>
+            </li>
+			<% end if %>
+            <li class="nav-item">
+               <a class="nav-link js-scroll-trigger" href="contato.asp">Contato</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link js-scroll-trigger" href="sobre.html">Sobre</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link js-scroll-trigger" href="associacao.asp">Novos associados</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link js-scroll-trigger" href="contato.html">Contato</a>
-            </li>
-            <li class="nav-item">
+			<% if session("cod") = "" or isnull(session("cod")) then %>
                <a class="nav-link js-scroll-trigger" href="login.asp"><i class="fas fa-user"></i> Entrar</a>
+			<% else %>
+			   <a class="nav-link js-scroll-trigger" href="AreaAssociado.asp"><i class="fas fa-user"></i> Área Associado</a>
+			<% end if %>
             </li>
          </ul>
       </nav>

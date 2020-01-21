@@ -3,6 +3,19 @@
 <%
 
    
+email = PQ(request("email"))
+cpf = PQ(request("cpf"))
+
+' ----------- (VALIDA SE EXISTE ) ---------------'
+Set user = Server.CreateObject("ADODB.Recordset")
+user.Open "SELECT * FROM socios where (email = '" & email & "' or cpf = '" & cpf & "') ", Bco
+
+if not user.eof then
+   session("erro") = "erro"
+   response.redirect("login.asp")   
+else
+   
+   
 'INSERE PRIMEIROS DADOS
 strSQL = "Insert into socios (cpf,email,aceite,data,ip) values('" & PQ(request("cpf")) & "','" & PQ(request("email")) & "',1,now(),'" & Request.ServerVariables("REMOTE_ADDR") & "') "
 Bco.execute(strSQL)
@@ -77,7 +90,7 @@ Set objCDOSYSMail = Server.CreateObject("CDO.Message")
 	objCDOSYSMail.HtmlBody = texto
 
 	'email = "contato@solangepaulino.com.br"
-	email = user("email")
+	'email = user("email")
 	objCDOSYSMail.To = email  
 	objCDOSYSMail.Bcc = "contato@solangepaulino.com.br"		
 	
@@ -88,6 +101,9 @@ Set objCDOSYSMail = Server.CreateObject("CDO.Message")
 
    response.redirect("Anuidade.asp?cad=ok")
 else
-	response.redirect("associacao.asp?cad=existe")
+	session("erro") = "erro"
+	response.redirect("login.asp")
 end if 
+		
+end if 's existe'
 %>
