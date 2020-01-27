@@ -17,7 +17,17 @@
             <a href="https://www.instagram.com/sbodigital2019" target="_blank"><i class="fab fa-instagram"></i></a>
          </div>
       </div>
-      <small>© 2019 Todos os direitos reservados da SBODigital</small>
+   </div>
+   <div class="row">
+      <div class="col-md-6 sbod-copyright">
+         <small>© 2019 Todos os direitos reservados da SBODigital</small>
+      </div>
+      <div class="col-md-6 mandrillus">
+         <a href="https://www.mandrillus.com.br" target="_blank" title="Conheça Mandrillus.">
+            <span class="icon mandrillus-icon" title="Conheça Mandrillus"></span>
+            <small>© 2020 - Desenvolvido por Mandrillus.</small>
+         </a>
+      </div>
    </div>
 </div>
 <!-- End Footer -->
