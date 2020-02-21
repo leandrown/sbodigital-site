@@ -1,3 +1,4 @@
+<!--#include file="func.asp"-->
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -67,8 +68,7 @@
                         <div class="">
                            <div class="card-body">
                               <h4>SBO Digital</h4>
-                              <p><i class="fas fa-phone-alt"></i> (11) 7593-7607</p>
-                              <p><a href="mailto:sbod@sbodigital.org.br">sbod@sbodigital.org.br</a></p>
+                              <p><i class="fa fa-envelope"></i> <a href="mailto:sbod@sbodigital.org.br">sbod@sbodigital.org.br</a></p>
                            </div>
                         </div>
                      </div>

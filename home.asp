@@ -42,42 +42,7 @@
       </div>
    </section>
 
-   <!-- Section News -->
-   <section id="news">
-      <div class="container">
-         <div class="row">
-            <div class="col">
-               <h6>Notícias</h6>
-               <h2>Convite Especial - 38º CIOSP</h2>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-md-6">
-               <img src="img/news/palestra-marcos-pontes.jpeg" alt="Palestra com Marcos Pontes">
-            </div>
-            <div class="col-md-6">
-               <article>
-                  <p>Caros Colegas, um feliz e maravilhoso 2020 a todos!</p>
-                  <p>
-                     A Sociedade SBO Digital inicia o ano em plena atividade, com a primeira participação da instituição em parceria com a APCD / CIOSP.
-                  </p>
-                  <p>
-                     Durante o evento CIOSP, receberemos a ilustre visita do Ministro da Ciência e Tecnologia Sr. Marcos Pontes, no dia 31 de Janeiro de 2020 das 15h às 17h.
-                  </p>
-                  <p>
-                     O primeiro astronauta brasileiro e Sul-americano a ir ao espaço e pesquisar na Estação Espacial Internacional -ISS, o engenheiro Marcos Pontes ministrará uma conferência com muita exclusividade em um auditório limitado dentro da feira do Congresso.
-                  </p>
-                  <p>
-                     Os interessados em assistir a esta palestra imperdível, deverá  confirmar a sua participação enviando uma mensagem no meu número de WhatsApp até quinta-feira desta semana.
-                  </p>Contamos com a presença de vocês.</p>
-                  <p>Desejo um ótimo Congresso a todos.</p>
-                  <p><strong>Paulo Kano</strong></p>
-               </article>
-            </div>
-         </div>
-      </div>
-   </section>
-
+ 
    <!-- Section Members -->
    <section id="members">
       <div class="members-background">

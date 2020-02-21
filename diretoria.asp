@@ -1,3 +1,4 @@
+<!--#include file="func.asp"-->
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -134,10 +135,6 @@
                      <tr>
                         <th scope="row">MEMBRO (VOGAL)</th>
                         <td>Frederico Guilherme Otto Kokol</td>
-                     </tr>
-                     <tr>
-                        <th scope="row">MEMBRO (VOGAL)</th>
-                        <td>Giselle Araújo Elias</td>
                      </tr>
                      <tr>
                         <th scope="row">MEMBRO (VOGAL)</th>

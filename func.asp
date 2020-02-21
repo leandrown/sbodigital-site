@@ -8,9 +8,9 @@ Dim strQueryString
 Dim strFullUrl
 
 If lcase(Request.ServerVariables("HTTPS")) = "on" Then 
-    strProtocol = "https" 
+   strProtocol = "https" 
 Else
-    strProtocol = "http" 
+   strProtocol = "http" 
 End If
 
 strDomain= Request.ServerVariables("SERVER_NAME")

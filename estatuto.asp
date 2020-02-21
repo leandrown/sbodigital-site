@@ -1,7 +1,6 @@
 <!--#include file="func.asp"-->
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
    <link href="sbod.ico" rel="icon" type="image/x-icon" />	
    <meta charset="UTF-8">

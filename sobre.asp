@@ -1,3 +1,4 @@
+<!--#include file="func.asp"-->
 <!DOCTYPE html>
 <html lang="pt-br">
 
