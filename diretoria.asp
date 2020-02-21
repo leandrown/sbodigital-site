@@ -137,6 +137,10 @@
                      </tr>
                      <tr>
                         <th scope="row">MEMBRO (VOGAL)</th>
+                        <td>Giselle Araújo Elias</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">MEMBRO (VOGAL)</th>
                         <td>Leandro Augusto Pinto Pereira</td>
                      </tr>
                      <tr>

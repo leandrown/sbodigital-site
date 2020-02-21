@@ -210,8 +210,8 @@ else
 				
   <div class="form-row">
     <div class="form-group col-md-12">
-      <label for="inputInst">Instituição</label>
-      <input type="text" class="form-control" id="instituicao" name="instituicao" placeholder="" value="<%=rs("instituicao")%>">
+      <label for="inputInst">Instituição *</label>
+      <input type="text" class="form-control" id="instituicao" name="instituicao" placeholder="" required value="<%=rs("instituicao")%>">
     </div>
 
     <div class="form-group col-md-12">

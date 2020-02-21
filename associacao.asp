@@ -226,8 +226,8 @@ session("email") = ""
 				
   <div class="form-row">
     <div class="form-group col-md-12">
-      <label for="inputInst">Instituição</label>
-      <input type="text" class="form-control" id="instituicao" name="instituicao" placeholder="">
+      <label for="inputInst">Instituição *</label>
+      <input type="text" class="form-control" id="instituicao" name="instituicao" placeholder="" required>
     </div>
 
     <div class="form-group col-md-12">
