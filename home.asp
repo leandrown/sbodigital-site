@@ -1,3 +1,21 @@
+   <section id="news">
+      <div class="container">
+         <div class="row">
+            <div class="col">
+               <h6>Eventos</h6>
+               <h2>Digital Dentistry Brazil - Rio 2020</h2>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <a href="http://www.ddb2020.com.br/" target="_blank">
+                  <img src="img/news/TodosProfessores01.png" alt="Digital Dentistry Brazil - Rio 2020">
+               </a>
+            </div>
+         </div>
+      </div>
+   </section>
+
    <!-- Section Know More -->
    <section id="know-more">
       <div class="container">
@@ -42,7 +60,6 @@
       </div>
    </section>
 
- 
    <!-- Section Members -->
    <section id="members">
       <div class="members-background">

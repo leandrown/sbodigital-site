@@ -39,6 +39,7 @@ header nav .shift ul li a:hover:after {
   width: 100%;
   height: 428px;
   background: url("../img/Sans-titre-3.png") center 5em no-repeat;
+  /* background: url("../img/news/banner-ddb-rio2020.png") center 5em no-repeat; */
   background-size: cover;
   position: relative;
 }
